@@ -1,6 +1,6 @@
 # Expertadvisor Application
 
-## collaborator space for Expert advisor space 
+## collaborator space for Expertadvisor as part of TTH hackathon
 
 ### Steps for the environment setup 
 
