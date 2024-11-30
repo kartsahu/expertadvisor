@@ -208,18 +208,19 @@ def find_customer_by_name(file_path, customer_name):
         customer_names=[]
         for customer_data in data:
             customer_names.append(customer_data['name'].lower())
+            if customer_name.lower() in customer_names:
+                return customer_data
         # st.text(customer_names)
         # customer_names = [customer['name'] for customer in data]
         # closest_match = difflib.get_close_matches(customer_name, customer_names, n=1, cutoff=0.8)
-        if customer_name.lower() in customer_names:
-            return customer_name
+
         # if closest_match:
         #     for customer in data:
         #         if customer['name'] == closest_match[0]:
         #             st.text(customer)
         #             return customer
-        else:
-            return False
+
+        return False
 
     except FileNotFoundError:
         return "File not found."
