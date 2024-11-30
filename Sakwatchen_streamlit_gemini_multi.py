@@ -8,7 +8,6 @@ import os
 import logging as log
 import PyPDF2
 
-# from google.colab import files
 gemini_api_key = "470155914573"
 
 st.header("Chat bot")
