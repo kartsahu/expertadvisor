@@ -27,19 +27,19 @@ logger.info("Chatbot started")
 def reading_single_file(pdf_file_path):
     file_data=[]
     with open(pdf_file_path, 'rb') as file:
-        reader = PyPDF2.PdfFileReader(file)
+        reader = PyPDF2.PdfReader(file)
 
 
-        num_pages = reader.numPages
+        num_pages = len(reader.pages)
         print(f'Total pages: {num_pages}')
 
     # Read each page
         for page_num in range(num_pages):
-            page = reader.getPage(page_num)
+            page = reader.pages[page_num]
             text = page.extract_text()
             file_data.append(text)
             print(f'Page {page_num + 1}:\n{text}\n')
-    return file_data
+    return " ".join(file_data)
 
 def extract_text_from_json(json_data):
     """
@@ -84,9 +84,14 @@ def read_and_extract_from_multiple_files(json_file_path):
                 print(f"Error reading {file_data}: {e}")
 
         elif file_w_path.endswith('.pdf'):
-            all_text.append(reading_single_file(file_w_path))
+            try:
+                all_text.append(reading_single_file(file_w_path))
+            except Exception as e:
+                raise Exception(e)
         else:
             raise Exception(f"Invalid file format : {file_w_path}")
+    logger.info("all data type")
+    logger.info(type(all_text))
     return "\n\n".join(all_text)
 
 def multiturn_generate_content(user_input):
