@@ -1,0 +1,48 @@
+{
+        "Silver": [
+        "10% Bonus Points",
+        "Priority Late Checkout",
+        "Ultimate Reservation Guarantee",
+        "Dedicated Reservation Line"
+    ],
+    "Gold": [
+        "25% Bonus Points",
+        "2 PM Late Checkout",
+        "Enhanced Room Upgrade",
+        "Welcome Gift of Points"
+    ],
+    "Platinum": [
+        "50% Bonus Points",
+        "Room Upgrades including Select Suites",
+        "Welcome Gift Choice (Points, Breakfast, or Amenity)",
+        "Lounge Access",
+        "Guaranteed 4 PM Late Checkout",
+        "Free Enhanced In-Room Internet",
+        "Ultimate Reservation Guarantee",
+        "Annual Choice Benefit"
+    ],
+    "Titanium": [
+        "75% Bonus Points",
+        "Room Upgrades including Select Suites",
+        "Welcome Gift Choice (Points, Breakfast, or Amenity)",
+        "Lounge Access",
+        "Guaranteed 4 PM Late Checkout",
+        "Free Enhanced In-Room Internet",
+        "Ultimate Reservation Guarantee",
+        "Annual Choice Benefit",
+        "48-Hour Guaranteed Availability"
+    ],
+    "Ambassador": [
+        "75% Bonus Points",
+        "Room Upgrades including Select Suites",
+        "Welcome Gift Choice (Points, Breakfast, or Amenity)",
+        "Lounge Access",
+        "Guaranteed 4 PM Late Checkout",
+        "Free Enhanced In-Room Internet",
+        "Ultimate Reservation Guarantee",
+        "Annual Choice Benefit",
+        "48-Hour Guaranteed Availability",
+        "Your24 (Flexible Check-In/Check-Out)",
+        "Ambassador Service"
+    ]
+}
