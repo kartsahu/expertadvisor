@@ -16,7 +16,7 @@ os.environ["GOOGLE_APPLICATION_CREDENTIALS"]=os.path.join(os.getcwd(),".\\access
 print(os.getenv('GOOGLE_APPLICATION_CREDENTIALS'))
 print("compelted the credential setup")
 st.header("Chat bot")
-os.environ["GOOGLE_APPLICATION_CREDENTIALS"]=os.path.join(os.getcwd(),".\\access\\gemini_key.json")
+os.environ["GOOGLE_APPLICATION_CREDENTIALS"]=os.path.join(os.getcwd(),"access\\gemini_key.json")
 
 customer_data_path =os.path.join(os.getcwd(),".\\customer_dir\\customer_profiles.json")
 log.basicConfig(filename=os.path.join(os.getcwd(),"newfile.log"),format='%(asctime)s %(message)s',filemode='w')
@@ -212,7 +212,7 @@ def find_customer_by_name(file_path, customer_name):
                 if customer['name'] == closest_match[0]:
                     return customer
 
-        return "Customer not found."
+        return False
 
     except FileNotFoundError:
         return "File not found."
@@ -225,9 +225,10 @@ if __name__ == '__main__':
     cust_name = st.text_input('Please provide your customer Name')
     if cust_name:
         cls_cust_name = find_customer_by_name(customer_data_path,cust_name)
-        if cls_cust_name=="Customer not found.":
+        if cls_cust_name:
             use_details_fromUI = st.text_input("Customer doesn't seems to exist in database \nProvide trip purpose and other perference detials")
         else:
+            # st.text(f"customer is found,{cls_cust_name} when {cust_name}")
             use_details_fromUI="already provide"
         logger.info(f"closest customer name :{cls_cust_name} based on cust_name :{cust_name}")
         if st.sidebar.button("Close Session"):
