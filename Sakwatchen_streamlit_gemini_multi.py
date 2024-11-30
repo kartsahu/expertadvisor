@@ -264,14 +264,26 @@ if __name__ == '__main__':
         #     # Now query the Gemini API with the retrieved text or the user's query
         #     # full_query = f"{response_text}\n\nQuestion: {user_query}\nAnswer:"
         #     # gemini_response = query_gemini_api(full_query, gemini_api_key)
+            if cls_cust_name:
+                ## when user details are available in db
+                prompt=(f"""\n\nGenerate response for the query based on abobe data\n\n
+                User details and preferences : {json.dumps(cls_cust_name)} 
+                to create a response for query {user_query} """)
+            else:
+                ## When user details are not available
+                prompt=(f"""\n\nGenerate response for the query based on above data\n\n
+                Query: {user_query}
+                for customer names : {cust_name} 
+                consider the special preference as follows \n{use_details_fromUI} """ )
+
             logger.info("closest name ",type(cls_cust_name))
             logger.info("query ",type(user_query))
             logger.info("use_details_fromUI ", type(use_details_fromUI))
-            prompt = ("Use preference from the customer i.e., "+ json.dumps(cls_cust_name) +
-                      " to create a response based on the available data " + user_query+
-                      " if customer details are not available then use the following details"+
-                      use_details_fromUI)
-            logger.info(prompt)
+            # prompt = ("Use preference from the customer i.e., "+ json.dumps(cls_cust_name) +
+            #           " to create a response based on the available data " + user_query+
+            #           " if customer details are not available then use the following details"+
+            #           use_details_fromUI)
+            print(prompt)
             gemini_response = multiturn_generate_content(prompt)
             with st.chat_message("assistant"):
                 st.markdown(gemini_response.text)
