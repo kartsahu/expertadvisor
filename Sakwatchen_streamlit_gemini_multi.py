@@ -100,19 +100,8 @@ def read_and_extract_from_multiple_files(json_file_path):
 def multiturn_generate_content(user_input):
     #Read JSON file
     json_file_path = ".\\data"
-    contents = []
-    #contents.append(os.read(file_w_path))
     combined_text = read_and_extract_from_multiple_files(json_file_path)
-
-
-    #with open(combined_text, 'r') as file:
-    #data = json.load(file)
-
-        # Extract complaint text from JSON
     data_txt = extract_text_from_json(combined_text)
-    # text1_1 = data.get('complaint_text', '')
-    # textsi_1 = complaint_data.get('system_instruction',
-    #    """You are a chatbot assistant in customer service. When a customer email or chat is given to you, you will extract the main issues from it. You must flag any references to illegal activity, violence, or discrimination. Write up to 3 main issues per paragraph. After, suggest to the customer service representative how this could be handled in the moment and give examples. Then, suggest changes to protocols and systems that can be made to prevent future similar complaints. Include a greeting and sign-off. Your tone should be friendly and upbeat.""")
     vertexai.init(project="sakwatchen-expertadvisor", location="us-central1")
 
     model = GenerativeModel(
@@ -147,25 +136,14 @@ def multiturn_generate_content(user_input):
 
     chat = model.start_chat()
 
-    # Display extracted JSON content and allow user input
-    # print("\nExtracted Text from JSON:")
-    # for idx, text in enumerate(data_txt, 1):
-    #   print(f"{idx}. {text}")
 
     logger.info("\nChatbot Interaction:")
-    # while True:
-    # user_input = input("Enter your message (type 'exit' to quit): ")
-    # if user_input.lower() == 'exit':
-    # print("Goodbye!")
-    # break
 
-    # Validate and format the input if needed
     if isinstance(user_input, list):
         user_input = " ".join(user_input)
     elif not isinstance(user_input, str):
         user_input = str(user_input)
 
-    # Combine user input with extracted text if needed
     message = f"{data_txt}\n\n{user_input}"
     logger.info(message)
 
@@ -184,7 +162,7 @@ def multiturn_generate_content(user_input):
     print(response.text)
     print("-" * 50)
     return response
-# Example usage
+
 def load_chat_history(cust_name):
     try:
         with open(f'{cust_name}_chat_history.json', 'r') as file:
@@ -210,16 +188,6 @@ def find_customer_by_name(file_path, customer_name):
             customer_names.append(customer_data['name'].lower())
             if customer_name.lower() in customer_names:
                 return customer_data
-        # st.text(customer_names)
-        # customer_names = [customer['name'] for customer in data]
-        # closest_match = difflib.get_close_matches(customer_name, customer_names, n=1, cutoff=0.8)
-
-        # if closest_match:
-        #     for customer in data:
-        #         if customer['name'] == closest_match[0]:
-        #             st.text(customer)
-        #             return customer
-
         return False
 
     except FileNotFoundError:
@@ -249,41 +217,38 @@ if __name__ == '__main__':
                 st.markdown(message['content'])
 
         user_query = st.chat_input("Ask a question:")
-    #user_query = st.text_input('input your request')
         if user_query:
-            # if user_query.lower() == 'exit':
-            #     print("Goodbye!")
-    # Display user message
+
             with st.chat_message("user"):
                 st.markdown(user_query)
-    # Add user message to chat history
+
             st.session_state['messages'].append({"role": "user", "content": user_query})
-        # if user_query:
-        #     # Use the document search or Gemini API to generate a response
-        #     # First, get relevant text from FAISS (optional but preferred for RAG)
-        #     # response_text = docsearch.similarity_search(user_query, k=1)[0].page_content
-        #     # Now query the Gemini API with the retrieved text or the user's query
-        #     # full_query = f"{response_text}\n\nQuestion: {user_query}\nAnswer:"
-        #     # gemini_response = query_gemini_api(full_query, gemini_api_key)
+
             if cls_cust_name:
-                ## when user details are available in db
-                prompt=(f"""\n\nGenerate response for the query based on abobe data\n\n
+
+                prompt=(f"""\n\nGenerate response for the query based on abobe data
                 User details and preferences : {json.dumps(cls_cust_name)} 
-                to create a response for query {user_query} """)
+                to create a response for query {user_query} 
+following are the order of best cancellation policy in decreasing order : 
+1. Cancel Anytime
+2. Free cancellation till 24hrs before check-in
+3. Free cancellation till 48hrs before check-in
+4. Free cancellation till 72hrs before check in""")
             else:
-                ## When user details are not available
-                prompt=(f"""\n\nGenerate response for the query based on above data\n\n
+
+                prompt=(f"""\n\nGenerate response for the query based on above data
                 Query: {user_query}
                 for customer names : {cust_name} 
-                consider the special preference as follows \n{use_details_fromUI} """ )
+                consider the special preference as follows \n{use_details_fromUI}
+following are the order of best cancellation policy in decreasing order : 
+1. Cancel Anytime
+2. Free cancellation till 24hrs before check-in
+3. Free cancellation till 48hrs before check-in
+4. Free cancellation till 72hrs before check in""" )
 
             logger.info("closest name ",type(cls_cust_name))
             logger.info("query ",type(user_query))
             logger.info("use_details_fromUI ", type(use_details_fromUI))
-            # prompt = ("Use preference from the customer i.e., "+ json.dumps(cls_cust_name) +
-            #           " to create a response based on the available data " + user_query+
-            #           " if customer details are not available then use the following details"+
-            #           use_details_fromUI)
             print(prompt)
             gemini_response = multiturn_generate_content(prompt)
             with st.chat_message("assistant"):
