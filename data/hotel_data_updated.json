@@ -1,0 +1,2649 @@
+[
+    {
+        "Hotel ID": "HOTEL_000",
+        "Hotel Name": "The Luxury Collection Dubai",
+        "Hotel Type": "Luxury",
+        "brand name": "The Luxury Collection",
+        "City": "Dubai",
+        "Address": "54 Oxford St",
+        "Star Rating": 4,
+        "Attributes of Hotel": {
+            "capacity": 800,
+            "base_price": 500,
+            "amenities": [
+                "Wi-Fi",
+                "TV",
+                "AC",
+                "SPA",
+                "RESORT",
+                "RESTRAUNTS",
+                "VEGAN RESTRAUNTS",
+                "CHILD CARE",
+                "BABY FOOD",
+                "SUITES"
+            ]
+        },
+        "Cancellation_policy": [
+            "Free cancellation till 24hrs before check-in"
+        ],
+        "pet frendly": "not pet friendly"
+    },
+    {
+        "Hotel ID": "HOTEL_001",
+        "Hotel Name": "Moxy Hotels Bangkok",
+        "Hotel Type": "Select",
+        "brand name": "Moxy Hotels",
+        "City": "Bangkok",
+        "Address": "74 Champs-\u00c9lys\u00e9es",
+        "Star Rating": 3,
+        "Attributes of Hotel": {
+            "capacity": 250,
+            "base_price": 150,
+            "amenities": [
+                "Wi-Fi",
+                "TV",
+                "AC"
+            ]
+        },
+        "Cancellation_policy": [
+            "Free cancellation till 24hrs before check-in"
+        ],
+        "pet frendly": "not pet friendly"
+    },
+    {
+        "Hotel ID": "HOTEL_002",
+        "Hotel Name": "Element Hotels Bangkok",
+        "Hotel Type": "Longer Stays",
+        "brand name": "Element Hotels",
+        "City": "Bangkok",
+        "Address": "39 Ginza",
+        "Star Rating": 2,
+        "Attributes of Hotel": {
+            "capacity": 150,
+            "base_price": 200,
+            "amenities": [
+                "Wi-Fi",
+                "TV",
+                "AC",
+                "Two Bedrooms",
+                "Laundry"
+            ]
+        },
+        "Cancellation_policy": [
+            "Free cancellation till 72hrs before check in"
+        ],
+        "pet frendly": {
+            "pet_friendly": true,
+            "pet_fee": 50,
+            "pet_weight limit in pounds": 40
+        }
+    },
+    {
+        "Hotel ID": "HOTEL_003",
+        "Hotel Name": "SpringHill Suites Dubai",
+        "Hotel Type": "Select",
+        "brand name": "SpringHill Suites",
+        "City": "Dubai",
+        "Address": "21 Ginza",
+        "Star Rating": 3,
+        "Attributes of Hotel": {
+            "capacity": 250,
+            "base_price": 150,
+            "amenities": [
+                "Wi-Fi",
+                "TV",
+                "AC"
+            ]
+        },
+        "Cancellation_policy": [
+            "Cancel Anytime"
+        ],
+        "pet frendly": "not pet friendly"
+    },
+    {
+        "Hotel ID": "HOTEL_004",
+        "Hotel Name": "Marriott Hotels London",
+        "Hotel Type": "Premium",
+        "brand name": "Marriott Hotels",
+        "City": "London",
+        "Address": "10 Oxford St",
+        "Star Rating": 2,
+        "Attributes of Hotel": {
+            "capacity": 600,
+            "base_price": 250,
+            "amenities": [
+                "Wi-Fi",
+                "TV",
+                "AC",
+                "Kitchenette",
+                "Balcony",
+                "SPA",
+                "RESTRAUNTS",
+                "VEGAN RESTRAUNTS",
+                "CHILD CARE",
+                "BABY FOOD"
+            ]
+        },
+        "Cancellation_policy": [
+            "Free cancellation till 24hrs before check-in"
+        ],
+        "pet frendly": "not pet friendly"
+    },
+    {
+        "Hotel ID": "HOTEL_005",
+        "Hotel Name": "W Hotels Paris",
+        "Hotel Type": "Luxury",
+        "brand name": "W Hotels",
+        "City": "Paris",
+        "Address": "74 Champs-\u00c9lys\u00e9es",
+        "Star Rating": 4,
+        "Attributes of Hotel": {
+            "capacity": 800,
+            "base_price": 500,
+            "amenities": [
+                "Wi-Fi",
+                "TV",
+                "AC",
+                "SPA",
+                "RESORT",
+                "RESTRAUNTS",
+                "VEGAN RESTRAUNTS",
+                "CHILD CARE",
+                "BABY FOOD",
+                "SUITES"
+            ]
+        },
+        "Cancellation_policy": [
+            "Free cancellation till 48hrs before check-in"
+        ],
+        "pet frendly": {
+            "pet_friendly": true,
+            "pet_fee": 100,
+            "pet_weight limit in pounds": 50
+        }
+    },
+    {
+        "Hotel ID": "HOTEL_006",
+        "Hotel Name": "Marriott Vacation Club London",
+        "Hotel Type": "Premium",
+        "brand name": "Marriott Vacation Club",
+        "City": "London",
+        "Address": "80 Champs-\u00c9lys\u00e9es",
+        "Star Rating": 3,
+        "Attributes of Hotel": {
+            "capacity": 600,
+            "base_price": 250,
+            "amenities": [
+                "Wi-Fi",
+                "TV",
+                "AC",
+                "Kitchenette",
+                "Balcony",
+                "SPA",
+                "RESTRAUNTS",
+                "VEGAN RESTRAUNTS",
+                "CHILD CARE",
+                "BABY FOOD"
+            ]
+        },
+        "Cancellation_policy": [
+            "Free cancellation till 24hrs before check-in"
+        ],
+        "pet frendly": "not pet friendly"
+    },
+    {
+        "Hotel ID": "HOTEL_007",
+        "Hotel Name": "Ritz-Carlton Reserve Tokyo",
+        "Hotel Type": "Luxury",
+        "brand name": "Ritz-Carlton Reserve",
+        "City": "Tokyo",
+        "Address": "63 Champs-\u00c9lys\u00e9es",
+        "Star Rating": 2,
+        "Attributes of Hotel": {
+            "capacity": 800,
+            "base_price": 500,
+            "amenities": [
+                "Wi-Fi",
+                "TV",
+                "AC",
+                "SPA",
+                "RESORT",
+                "RESTRAUNTS",
+                "VEGAN RESTRAUNTS",
+                "CHILD CARE",
+                "BABY FOOD",
+                "SUITES"
+            ]
+        },
+        "Cancellation_policy": [
+            "Free cancellation till 48hrs before check-in"
+        ],
+        "pet frendly": "not pet friendly"
+    },
+    {
+        "Hotel ID": "HOTEL_008",
+        "Hotel Name": "Fairfield Inn & Suites Tokyo",
+        "Hotel Type": "Select",
+        "brand name": "Fairfield Inn & Suites",
+        "City": "Tokyo",
+        "Address": "13 Oxford St",
+        "Star Rating": 4,
+        "Attributes of Hotel": {
+            "capacity": 250,
+            "base_price": 150,
+            "amenities": [
+                "Wi-Fi",
+                "TV",
+                "AC"
+            ]
+        },
+        "Cancellation_policy": [
+            "Free cancellation till 24hrs before check-in"
+        ],
+        "pet frendly": "not pet friendly"
+    },
+    {
+        "Hotel ID": "HOTEL_009",
+        "Hotel Name": "Apartments by Marriott Bonvoy New York",
+        "Hotel Type": "Longer Stays",
+        "brand name": "Apartments by Marriott Bonvoy",
+        "City": "New York",
+        "Address": "35 Champs-\u00c9lys\u00e9es",
+        "Star Rating": 1,
+        "Attributes of Hotel": {
+            "capacity": 150,
+            "base_price": 200,
+            "amenities": [
+                "Wi-Fi",
+                "TV",
+                "AC",
+                "Two Bedrooms",
+                "Laundry"
+            ]
+        },
+        "Cancellation_policy": [
+            "Free cancellation till 72hrs before check in"
+        ],
+        "pet frendly": "not pet friendly"
+    },
+    {
+        "Hotel ID": "HOTEL_010",
+        "Hotel Name": "TownePlace Suites Tokyo",
+        "Hotel Type": "Longer Stays",
+        "brand name": "TownePlace Suites",
+        "City": "Tokyo",
+        "Address": "69 Champs-\u00c9lys\u00e9es",
+        "Star Rating": 2,
+        "Attributes of Hotel": {
+            "capacity": 150,
+            "base_price": 200,
+            "amenities": [
+                "Wi-Fi",
+                "TV",
+                "AC",
+                "Two Bedrooms",
+                "Laundry"
+            ]
+        },
+        "Cancellation_policy": [
+            "Free cancellation till 24hrs before check-in"
+        ],
+        "pet frendly": "not pet friendly"
+    },
+    {
+        "Hotel ID": "HOTEL_011",
+        "Hotel Name": "Tribute Portfolio London",
+        "Hotel Type": "Collections",
+        "brand name": "Tribute Portfolio",
+        "City": "London",
+        "Address": "36 Main St",
+        "Star Rating": 1,
+        "Attributes of Hotel": {
+            "capacity": 100,
+            "base_price": 300,
+            "amenities": [
+                "Wi-Fi",
+                "TV",
+                "AC",
+                "Picaso Paintings",
+                "Laundry"
+            ]
+        },
+        "Cancellation_policy": [
+            "Free cancellation till 48hrs before check-in"
+        ],
+        "pet frendly": "not pet friendly"
+    },
+    {
+        "Hotel ID": "HOTEL_012",
+        "Hotel Name": "Courtyard by Marriott New York",
+        "Hotel Type": "Select",
+        "brand name": "Courtyard by Marriott",
+        "City": "New York",
+        "Address": "23 Champs-\u00c9lys\u00e9es",
+        "Star Rating": 1,
+        "Attributes of Hotel": {
+            "capacity": 250,
+            "base_price": 150,
+            "amenities": [
+                "Wi-Fi",
+                "TV",
+                "AC"
+            ]
+        },
+        "Cancellation_policy": [
+            "Free cancellation till 24hrs before check-in"
+        ],
+        "pet frendly": {
+            "pet_friendly": true,
+            "pet_fee": 100,
+            "pet_weight limit in pounds": 40
+        }
+    },
+    {
+        "Hotel ID": "HOTEL_013",
+        "Hotel Name": "Gaylord Hotels Paris",
+        "Hotel Type": "Premium",
+        "brand name": "Gaylord Hotels",
+        "City": "Paris",
+        "Address": "26 Oxford St",
+        "Star Rating": 2,
+        "Attributes of Hotel": {
+            "capacity": 600,
+            "base_price": 250,
+            "amenities": [
+                "Wi-Fi",
+                "TV",
+                "AC",
+                "Kitchenette",
+                "Balcony",
+                "SPA",
+                "RESTRAUNTS",
+                "VEGAN RESTRAUNTS",
+                "CHILD CARE",
+                "BABY FOOD"
+            ]
+        },
+        "Cancellation_policy": [
+            "Cancel Anytime"
+        ],
+        "pet frendly": "not pet friendly"
+    },
+    {
+        "Hotel ID": "HOTEL_014",
+        "Hotel Name": "Courtyard by Marriott London",
+        "Hotel Type": "Select",
+        "brand name": "Courtyard by Marriott",
+        "City": "London",
+        "Address": "78 Oxford St",
+        "Star Rating": 5,
+        "Attributes of Hotel": {
+            "capacity": 250,
+            "base_price": 150,
+            "amenities": [
+                "Wi-Fi",
+                "TV",
+                "AC"
+            ]
+        },
+        "Cancellation_policy": [
+            "Free cancellation till 24hrs before check-in"
+        ],
+        "pet frendly": {
+            "pet_friendly": true,
+            "pet_fee": 100,
+            "pet_weight limit in pounds": 40
+        }
+    },
+    {
+        "Hotel ID": "HOTEL_015",
+        "Hotel Name": "Autograph Collection Sydney",
+        "Hotel Type": "Collections",
+        "brand name": "Autograph Collection",
+        "City": "Sydney",
+        "Address": "83 Ginza",
+        "Star Rating": 5,
+        "Attributes of Hotel": {
+            "capacity": 100,
+            "base_price": 300,
+            "amenities": [
+                "Wi-Fi",
+                "TV",
+                "AC",
+                "Picaso Paintings",
+                "Laundry"
+            ]
+        },
+        "Cancellation_policy": [
+            "Free cancellation till 48hrs before check-in"
+        ],
+        "pet frendly": {
+            "pet_friendly": true,
+            "pet_fee": 150,
+            "pet_weight limit in pounds": 40
+        }
+    },
+    {
+        "Hotel ID": "HOTEL_016",
+        "Hotel Name": "Tribute Portfolio Bangkok",
+        "Hotel Type": "Collections",
+        "brand name": "Tribute Portfolio",
+        "City": "Bangkok",
+        "Address": "60 Ginza",
+        "Star Rating": 5,
+        "Attributes of Hotel": {
+            "capacity": 100,
+            "base_price": 300,
+            "amenities": [
+                "Wi-Fi",
+                "TV",
+                "AC",
+                "Picaso Paintings",
+                "Laundry"
+            ]
+        },
+        "Cancellation_policy": [
+            "Cancel Anytime"
+        ],
+        "pet frendly": "not pet friendly"
+    },
+    {
+        "Hotel ID": "HOTEL_017",
+        "Hotel Name": "St. Regis Bangkok",
+        "Hotel Type": "Luxury",
+        "brand name": "St. Regis",
+        "City": "Bangkok",
+        "Address": "81 Champs-\u00c9lys\u00e9es",
+        "Star Rating": 2,
+        "Attributes of Hotel": {
+            "capacity": 800,
+            "base_price": 500,
+            "amenities": [
+                "Wi-Fi",
+                "TV",
+                "AC",
+                "SPA",
+                "RESORT",
+                "RESTRAUNTS",
+                "VEGAN RESTRAUNTS",
+                "CHILD CARE",
+                "BABY FOOD",
+                "SUITES"
+            ]
+        },
+        "Cancellation_policy": [
+            "Free cancellation till 24hrs before check-in"
+        ],
+        "pet frendly": "not pet friendly"
+    },
+    {
+        "Hotel ID": "HOTEL_018",
+        "Hotel Name": "The Luxury Collection Paris",
+        "Hotel Type": "Luxury",
+        "brand name": "The Luxury Collection",
+        "City": "Paris",
+        "Address": "18 Oxford St",
+        "Star Rating": 3,
+        "Attributes of Hotel": {
+            "capacity": 800,
+            "base_price": 500,
+            "amenities": [
+                "Wi-Fi",
+                "TV",
+                "AC",
+                "SPA",
+                "RESORT",
+                "RESTRAUNTS",
+                "VEGAN RESTRAUNTS",
+                "CHILD CARE",
+                "BABY FOOD",
+                "SUITES"
+            ]
+        },
+        "Cancellation_policy": [
+            "Free cancellation till 24hrs before check-in"
+        ],
+        "pet frendly": "not pet friendly"
+    },
+    {
+        "Hotel ID": "HOTEL_019",
+        "Hotel Name": "EDITION London",
+        "Hotel Type": "Luxury",
+        "brand name": "EDITION",
+        "City": "London",
+        "Address": "81 Oxford St",
+        "Star Rating": 1,
+        "Attributes of Hotel": {
+            "capacity": 800,
+            "base_price": 500,
+            "amenities": [
+                "Wi-Fi",
+                "TV",
+                "AC",
+                "SPA",
+                "RESORT",
+                "RESTRAUNTS",
+                "VEGAN RESTRAUNTS",
+                "CHILD CARE",
+                "BABY FOOD",
+                "SUITES"
+            ]
+        },
+        "Cancellation_policy": [
+            "Free cancellation till 24hrs before check-in"
+        ],
+        "pet frendly": "not pet friendly"
+    },
+    {
+        "Hotel ID": "HOTEL_020",
+        "Hotel Name": "Element Hotels Dubai",
+        "Hotel Type": "Longer Stays",
+        "brand name": "Element Hotels",
+        "City": "Dubai",
+        "Address": "66 Champs-\u00c9lys\u00e9es",
+        "Star Rating": 2,
+        "Attributes of Hotel": {
+            "capacity": 150,
+            "base_price": 200,
+            "amenities": [
+                "Wi-Fi",
+                "TV",
+                "AC",
+                "Two Bedrooms",
+                "Laundry"
+            ]
+        },
+        "Cancellation_policy": [
+            "Free cancellation till 72hrs before check in"
+        ],
+        "pet frendly": {
+            "pet_friendly": true,
+            "pet_fee": 50,
+            "pet_weight limit in pounds": 40
+        }
+    },
+    {
+        "Hotel ID": "HOTEL_021",
+        "Hotel Name": "Marriott Executive Apartments Rome",
+        "Hotel Type": "Longer Stays",
+        "brand name": "Marriott Executive Apartments",
+        "City": "Rome",
+        "Address": "67 Champs-\u00c9lys\u00e9es",
+        "Star Rating": 2,
+        "Attributes of Hotel": {
+            "capacity": 150,
+            "base_price": 200,
+            "amenities": [
+                "Wi-Fi",
+                "TV",
+                "AC",
+                "Two Bedrooms",
+                "Laundry"
+            ]
+        },
+        "Cancellation_policy": [
+            "Free cancellation till 24hrs before check-in"
+        ],
+        "pet frendly": "not pet friendly"
+    },
+    {
+        "Hotel ID": "HOTEL_022",
+        "Hotel Name": "The Luxury Collection Rome",
+        "Hotel Type": "Luxury",
+        "brand name": "The Luxury Collection",
+        "City": "Rome",
+        "Address": "3 Champs-\u00c9lys\u00e9es",
+        "Star Rating": 1,
+        "Attributes of Hotel": {
+            "capacity": 800,
+            "base_price": 500,
+            "amenities": [
+                "Wi-Fi",
+                "TV",
+                "AC",
+                "SPA",
+                "RESORT",
+                "RESTRAUNTS",
+                "VEGAN RESTRAUNTS",
+                "CHILD CARE",
+                "BABY FOOD",
+                "SUITES"
+            ]
+        },
+        "Cancellation_policy": [
+            "Free cancellation till 24hrs before check-in"
+        ],
+        "pet frendly": "not pet friendly"
+    },
+    {
+        "Hotel ID": "HOTEL_023",
+        "Hotel Name": "Marriott Hotels Sydney",
+        "Hotel Type": "Premium",
+        "brand name": "Marriott Hotels",
+        "City": "Sydney",
+        "Address": "36 Oxford St",
+        "Star Rating": 2,
+        "Attributes of Hotel": {
+            "capacity": 600,
+            "base_price": 250,
+            "amenities": [
+                "Wi-Fi",
+                "TV",
+                "AC",
+                "Kitchenette",
+                "Balcony",
+                "SPA",
+                "RESTRAUNTS",
+                "VEGAN RESTRAUNTS",
+                "CHILD CARE",
+                "BABY FOOD"
+            ]
+        },
+        "Cancellation_policy": [
+            "Free cancellation till 24hrs before check-in"
+        ],
+        "pet frendly": "not pet friendly"
+    },
+    {
+        "Hotel ID": "HOTEL_024",
+        "Hotel Name": "The Luxury Collection New York",
+        "Hotel Type": "Luxury",
+        "brand name": "The Luxury Collection",
+        "City": "New York",
+        "Address": "37 Ginza",
+        "Star Rating": 4,
+        "Attributes of Hotel": {
+            "capacity": 800,
+            "base_price": 500,
+            "amenities": [
+                "Wi-Fi",
+                "TV",
+                "AC",
+                "SPA",
+                "RESORT",
+                "RESTRAUNTS",
+                "VEGAN RESTRAUNTS",
+                "CHILD CARE",
+                "BABY FOOD",
+                "SUITES"
+            ]
+        },
+        "Cancellation_policy": [
+            "Free cancellation till 72hrs before check in"
+        ],
+        "pet frendly": "not pet friendly"
+    },
+    {
+        "Hotel ID": "HOTEL_025",
+        "Hotel Name": "Marriott Hotels Rome",
+        "Hotel Type": "Premium",
+        "brand name": "Marriott Hotels",
+        "City": "Rome",
+        "Address": "42 Oxford St",
+        "Star Rating": 1,
+        "Attributes of Hotel": {
+            "capacity": 600,
+            "base_price": 250,
+            "amenities": [
+                "Wi-Fi",
+                "TV",
+                "AC",
+                "Kitchenette",
+                "Balcony",
+                "SPA",
+                "RESTRAUNTS",
+                "VEGAN RESTRAUNTS",
+                "CHILD CARE",
+                "BABY FOOD"
+            ]
+        },
+        "Cancellation_policy": [
+            "Free cancellation till 72hrs before check in"
+        ],
+        "pet frendly": "not pet friendly"
+    },
+    {
+        "Hotel ID": "HOTEL_026",
+        "Hotel Name": "City Express Sydney",
+        "Hotel Type": "Select",
+        "brand name": "City Express",
+        "City": "Sydney",
+        "Address": "28 Ginza",
+        "Star Rating": 1,
+        "Attributes of Hotel": {
+            "capacity": 250,
+            "base_price": 150,
+            "amenities": [
+                "Wi-Fi",
+                "TV",
+                "AC"
+            ]
+        },
+        "Cancellation_policy": [
+            "Free cancellation till 48hrs before check-in"
+        ],
+        "pet frendly": "not pet friendly"
+    },
+    {
+        "Hotel ID": "HOTEL_027",
+        "Hotel Name": "Element Hotels Dubai",
+        "Hotel Type": "Longer Stays",
+        "brand name": "Element Hotels",
+        "City": "Dubai",
+        "Address": "14 Ginza",
+        "Star Rating": 3,
+        "Attributes of Hotel": {
+            "capacity": 150,
+            "base_price": 200,
+            "amenities": [
+                "Wi-Fi",
+                "TV",
+                "AC",
+                "Two Bedrooms",
+                "Laundry"
+            ]
+        },
+        "Cancellation_policy": [
+            "Free cancellation till 72hrs before check in"
+        ],
+        "pet frendly": {
+            "pet_friendly": true,
+            "pet_fee": 50,
+            "pet_weight limit in pounds": 40
+        }
+    },
+    {
+        "Hotel ID": "HOTEL_028",
+        "Hotel Name": "Protea Hotels Paris",
+        "Hotel Type": "Select",
+        "brand name": "Protea Hotels",
+        "City": "Paris",
+        "Address": "87 Champs-\u00c9lys\u00e9es",
+        "Star Rating": 4,
+        "Attributes of Hotel": {
+            "capacity": 250,
+            "base_price": 150,
+            "amenities": [
+                "Wi-Fi",
+                "TV",
+                "AC"
+            ]
+        },
+        "Cancellation_policy": [
+            "Free cancellation till 72hrs before check in"
+        ],
+        "pet frendly": "not pet friendly"
+    },
+    {
+        "Hotel ID": "HOTEL_029",
+        "Hotel Name": "Westin New York",
+        "Hotel Type": "Premium",
+        "brand name": "Westin",
+        "City": "New York",
+        "Address": "89 Oxford St",
+        "Star Rating": 1,
+        "Attributes of Hotel": {
+            "capacity": 600,
+            "base_price": 250,
+            "amenities": [
+                "Wi-Fi",
+                "TV",
+                "AC",
+                "Kitchenette",
+                "Balcony",
+                "SPA",
+                "RESTRAUNTS",
+                "VEGAN RESTRAUNTS",
+                "CHILD CARE",
+                "BABY FOOD"
+            ]
+        },
+        "Cancellation_policy": [
+            "Free cancellation till 72hrs before check in"
+        ],
+        "pet frendly": "not pet friendly"
+    },
+    {
+        "Hotel ID": "HOTEL_030",
+        "Hotel Name": "St. Regis London",
+        "Hotel Type": "Luxury",
+        "brand name": "St. Regis",
+        "City": "London",
+        "Address": "80 Champs-\u00c9lys\u00e9es",
+        "Star Rating": 2,
+        "Attributes of Hotel": {
+            "capacity": 800,
+            "base_price": 500,
+            "amenities": [
+                "Wi-Fi",
+                "TV",
+                "AC",
+                "SPA",
+                "RESORT",
+                "RESTRAUNTS",
+                "VEGAN RESTRAUNTS",
+                "CHILD CARE",
+                "BABY FOOD",
+                "SUITES"
+            ]
+        },
+        "Cancellation_policy": [
+            "Free cancellation till 24hrs before check-in"
+        ],
+        "pet frendly": "not pet friendly"
+    },
+    {
+        "Hotel ID": "HOTEL_031",
+        "Hotel Name": "AC Hotels Sydney",
+        "Hotel Type": "Select",
+        "brand name": "AC Hotels",
+        "City": "Sydney",
+        "Address": "4 Ginza",
+        "Star Rating": 4,
+        "Attributes of Hotel": {
+            "capacity": 250,
+            "base_price": 150,
+            "amenities": [
+                "Wi-Fi",
+                "TV",
+                "AC"
+            ]
+        },
+        "Cancellation_policy": [
+            "Free cancellation till 48hrs before check-in"
+        ],
+        "pet frendly": {
+            "pet_friendly": true,
+            "pet_fee": 100,
+            "pet_weight limit in pounds": 40
+        }
+    },
+    {
+        "Hotel ID": "HOTEL_032",
+        "Hotel Name": "Sheraton London",
+        "Hotel Type": "Premium",
+        "brand name": "Sheraton",
+        "City": "London",
+        "Address": "90 Ginza",
+        "Star Rating": 4,
+        "Attributes of Hotel": {
+            "capacity": 600,
+            "base_price": 250,
+            "amenities": [
+                "Wi-Fi",
+                "TV",
+                "AC",
+                "Kitchenette",
+                "Balcony",
+                "SPA",
+                "RESTRAUNTS",
+                "VEGAN RESTRAUNTS",
+                "CHILD CARE",
+                "BABY FOOD"
+            ]
+        },
+        "Cancellation_policy": [
+            "Free cancellation till 48hrs before check-in"
+        ],
+        "pet frendly": "not pet friendly"
+    },
+    {
+        "Hotel ID": "HOTEL_033",
+        "Hotel Name": "Homes & Villas by Marriott Bonvoy Tokyo",
+        "Hotel Type": "Longer Stays",
+        "brand name": "Homes & Villas by Marriott Bonvoy",
+        "City": "Tokyo",
+        "Address": "20 Ginza",
+        "Star Rating": 4,
+        "Attributes of Hotel": {
+            "capacity": 150,
+            "base_price": 200,
+            "amenities": [
+                "Wi-Fi",
+                "TV",
+                "AC",
+                "Two Bedrooms",
+                "Laundry"
+            ]
+        },
+        "Cancellation_policy": [
+            "Free cancellation till 24hrs before check-in"
+        ],
+        "pet frendly": "not pet friendly"
+    },
+    {
+        "Hotel ID": "HOTEL_034",
+        "Hotel Name": "Fairfield Inn & Suites New York",
+        "Hotel Type": "Select",
+        "brand name": "Fairfield Inn & Suites",
+        "City": "New York",
+        "Address": "39 Ginza",
+        "Star Rating": 5,
+        "Attributes of Hotel": {
+            "capacity": 250,
+            "base_price": 150,
+            "amenities": [
+                "Wi-Fi",
+                "TV",
+                "AC"
+            ]
+        },
+        "Cancellation_policy": [
+            "Free cancellation till 72hrs before check in"
+        ],
+        "pet frendly": "not pet friendly"
+    },
+    {
+        "Hotel ID": "HOTEL_035",
+        "Hotel Name": "Residence Inn Sydney",
+        "Hotel Type": "Longer Stays",
+        "brand name": "Residence Inn",
+        "City": "Sydney",
+        "Address": "7 Champs-\u00c9lys\u00e9es",
+        "Star Rating": 4,
+        "Attributes of Hotel": {
+            "capacity": 150,
+            "base_price": 200,
+            "amenities": [
+                "Wi-Fi",
+                "TV",
+                "AC",
+                "Two Bedrooms",
+                "Laundry"
+            ]
+        },
+        "Cancellation_policy": [
+            "Free cancellation till 24hrs before check-in"
+        ],
+        "pet frendly": {
+            "pet_friendly": true,
+            "pet_fee": 100,
+            "pet_weight limit in pounds": 50
+        }
+    },
+    {
+        "Hotel ID": "HOTEL_036",
+        "Hotel Name": "Apartments by Marriott Bonvoy Bangkok",
+        "Hotel Type": "Longer Stays",
+        "brand name": "Apartments by Marriott Bonvoy",
+        "City": "Bangkok",
+        "Address": "54 Oxford St",
+        "Star Rating": 2,
+        "Attributes of Hotel": {
+            "capacity": 150,
+            "base_price": 200,
+            "amenities": [
+                "Wi-Fi",
+                "TV",
+                "AC",
+                "Two Bedrooms",
+                "Laundry"
+            ]
+        },
+        "Cancellation_policy": [
+            "Free cancellation till 48hrs before check-in"
+        ],
+        "pet frendly": "not pet friendly"
+    },
+    {
+        "Hotel ID": "HOTEL_037",
+        "Hotel Name": "AC Hotels Rome",
+        "Hotel Type": "Select",
+        "brand name": "AC Hotels",
+        "City": "Rome",
+        "Address": "10 Champs-\u00c9lys\u00e9es",
+        "Star Rating": 4,
+        "Attributes of Hotel": {
+            "capacity": 250,
+            "base_price": 150,
+            "amenities": [
+                "Wi-Fi",
+                "TV",
+                "AC"
+            ]
+        },
+        "Cancellation_policy": [
+            "Free cancellation till 72hrs before check in"
+        ],
+        "pet frendly": {
+            "pet_friendly": true,
+            "pet_fee": 100,
+            "pet_weight limit in pounds": 40
+        }
+    },
+    {
+        "Hotel ID": "HOTEL_038",
+        "Hotel Name": "Four Points by Sheraton New York",
+        "Hotel Type": "Select",
+        "brand name": "Four Points by Sheraton",
+        "City": "New York",
+        "Address": "92 Main St",
+        "Star Rating": 3,
+        "Attributes of Hotel": {
+            "capacity": 250,
+            "base_price": 150,
+            "amenities": [
+                "Wi-Fi",
+                "TV",
+                "AC"
+            ]
+        },
+        "Cancellation_policy": [
+            "Cancel Anytime"
+        ],
+        "pet frendly": "not pet friendly"
+    },
+    {
+        "Hotel ID": "HOTEL_039",
+        "Hotel Name": "St. Regis Paris",
+        "Hotel Type": "Luxury",
+        "brand name": "St. Regis",
+        "City": "Paris",
+        "Address": "20 Oxford St",
+        "Star Rating": 4,
+        "Attributes of Hotel": {
+            "capacity": 800,
+            "base_price": 500,
+            "amenities": [
+                "Wi-Fi",
+                "TV",
+                "AC",
+                "SPA",
+                "RESORT",
+                "RESTRAUNTS",
+                "VEGAN RESTRAUNTS",
+                "CHILD CARE",
+                "BABY FOOD",
+                "SUITES"
+            ]
+        },
+        "Cancellation_policy": [
+            "Free cancellation till 72hrs before check in"
+        ],
+        "pet frendly": "not pet friendly"
+    },
+    {
+        "Hotel ID": "HOTEL_040",
+        "Hotel Name": "Autograph Collection Bangkok",
+        "Hotel Type": "Collections",
+        "brand name": "Autograph Collection",
+        "City": "Bangkok",
+        "Address": "71 Ginza",
+        "Star Rating": 3,
+        "Attributes of Hotel": {
+            "capacity": 100,
+            "base_price": 300,
+            "amenities": [
+                "Wi-Fi",
+                "TV",
+                "AC",
+                "Picaso Paintings",
+                "Laundry"
+            ]
+        },
+        "Cancellation_policy": [
+            "Cancel Anytime"
+        ],
+        "pet frendly": {
+            "pet_friendly": true,
+            "pet_fee": 150,
+            "pet_weight limit in pounds": 40
+        }
+    },
+    {
+        "Hotel ID": "HOTEL_041",
+        "Hotel Name": "Protea Hotels New York",
+        "Hotel Type": "Select",
+        "brand name": "Protea Hotels",
+        "City": "New York",
+        "Address": "93 Ginza",
+        "Star Rating": 5,
+        "Attributes of Hotel": {
+            "capacity": 250,
+            "base_price": 150,
+            "amenities": [
+                "Wi-Fi",
+                "TV",
+                "AC"
+            ]
+        },
+        "Cancellation_policy": [
+            "Free cancellation till 24hrs before check-in"
+        ],
+        "pet frendly": "not pet friendly"
+    },
+    {
+        "Hotel ID": "HOTEL_042",
+        "Hotel Name": "Ritz-Carlton Reserve Rome",
+        "Hotel Type": "Luxury",
+        "brand name": "Ritz-Carlton Reserve",
+        "City": "Rome",
+        "Address": "58 Oxford St",
+        "Star Rating": 3,
+        "Attributes of Hotel": {
+            "capacity": 800,
+            "base_price": 500,
+            "amenities": [
+                "Wi-Fi",
+                "TV",
+                "AC",
+                "SPA",
+                "RESORT",
+                "RESTRAUNTS",
+                "VEGAN RESTRAUNTS",
+                "CHILD CARE",
+                "BABY FOOD",
+                "SUITES"
+            ]
+        },
+        "Cancellation_policy": [
+            "Free cancellation till 72hrs before check in"
+        ],
+        "pet frendly": "not pet friendly"
+    },
+    {
+        "Hotel ID": "HOTEL_043",
+        "Hotel Name": "Design Hotels Paris",
+        "Hotel Type": "Collections",
+        "brand name": "Design Hotels",
+        "City": "Paris",
+        "Address": "85 Ginza",
+        "Star Rating": 1,
+        "Attributes of Hotel": {
+            "capacity": 100,
+            "base_price": 300,
+            "amenities": [
+                "Wi-Fi",
+                "TV",
+                "AC",
+                "Picaso Paintings",
+                "Laundry"
+            ]
+        },
+        "Cancellation_policy": [
+            "Free cancellation till 48hrs before check-in"
+        ],
+        "pet frendly": "not pet friendly"
+    },
+    {
+        "Hotel ID": "HOTEL_044",
+        "Hotel Name": "Courtyard by Marriott New York",
+        "Hotel Type": "Select",
+        "brand name": "Courtyard by Marriott",
+        "City": "New York",
+        "Address": "53 Champs-\u00c9lys\u00e9es",
+        "Star Rating": 1,
+        "Attributes of Hotel": {
+            "capacity": 250,
+            "base_price": 150,
+            "amenities": [
+                "Wi-Fi",
+                "TV",
+                "AC"
+            ]
+        },
+        "Cancellation_policy": [
+            "Free cancellation till 24hrs before check-in"
+        ],
+        "pet frendly": {
+            "pet_friendly": true,
+            "pet_fee": 100,
+            "pet_weight limit in pounds": 40
+        }
+    },
+    {
+        "Hotel ID": "HOTEL_045",
+        "Hotel Name": "Element Hotels Paris",
+        "Hotel Type": "Longer Stays",
+        "brand name": "Element Hotels",
+        "City": "Paris",
+        "Address": "39 Main St",
+        "Star Rating": 4,
+        "Attributes of Hotel": {
+            "capacity": 150,
+            "base_price": 200,
+            "amenities": [
+                "Wi-Fi",
+                "TV",
+                "AC",
+                "Two Bedrooms",
+                "Laundry"
+            ]
+        },
+        "Cancellation_policy": [
+            "Free cancellation till 72hrs before check in"
+        ],
+        "pet frendly": {
+            "pet_friendly": true,
+            "pet_fee": 50,
+            "pet_weight limit in pounds": 40
+        }
+    },
+    {
+        "Hotel ID": "HOTEL_046",
+        "Hotel Name": "Autograph Collection London",
+        "Hotel Type": "Collections",
+        "brand name": "Autograph Collection",
+        "City": "London",
+        "Address": "16 Main St",
+        "Star Rating": 2,
+        "Attributes of Hotel": {
+            "capacity": 100,
+            "base_price": 300,
+            "amenities": [
+                "Wi-Fi",
+                "TV",
+                "AC",
+                "Picaso Paintings",
+                "Laundry"
+            ]
+        },
+        "Cancellation_policy": [
+            "Free cancellation till 72hrs before check in"
+        ],
+        "pet frendly": {
+            "pet_friendly": true,
+            "pet_fee": 150,
+            "pet_weight limit in pounds": 40
+        }
+    },
+    {
+        "Hotel ID": "HOTEL_047",
+        "Hotel Name": "Ritz-Carlton Reserve Dubai",
+        "Hotel Type": "Luxury",
+        "brand name": "Ritz-Carlton Reserve",
+        "City": "Dubai",
+        "Address": "53 Champs-\u00c9lys\u00e9es",
+        "Star Rating": 2,
+        "Attributes of Hotel": {
+            "capacity": 800,
+            "base_price": 500,
+            "amenities": [
+                "Wi-Fi",
+                "TV",
+                "AC",
+                "SPA",
+                "RESORT",
+                "RESTRAUNTS",
+                "VEGAN RESTRAUNTS",
+                "CHILD CARE",
+                "BABY FOOD",
+                "SUITES"
+            ]
+        },
+        "Cancellation_policy": [
+            "Free cancellation till 72hrs before check in"
+        ],
+        "pet frendly": "not pet friendly"
+    },
+    {
+        "Hotel ID": "HOTEL_048",
+        "Hotel Name": "Westin Dubai",
+        "Hotel Type": "Premium",
+        "brand name": "Westin",
+        "City": "Dubai",
+        "Address": "25 Ginza",
+        "Star Rating": 2,
+        "Attributes of Hotel": {
+            "capacity": 600,
+            "base_price": 250,
+            "amenities": [
+                "Wi-Fi",
+                "TV",
+                "AC",
+                "Kitchenette",
+                "Balcony",
+                "SPA",
+                "RESTRAUNTS",
+                "VEGAN RESTRAUNTS",
+                "CHILD CARE",
+                "BABY FOOD"
+            ]
+        },
+        "Cancellation_policy": [
+            "Free cancellation till 24hrs before check-in"
+        ],
+        "pet frendly": "not pet friendly"
+    },
+    {
+        "Hotel ID": "HOTEL_049",
+        "Hotel Name": "Marriott Hotels Dubai",
+        "Hotel Type": "Premium",
+        "brand name": "Marriott Hotels",
+        "City": "Dubai",
+        "Address": "27 Ginza",
+        "Star Rating": 4,
+        "Attributes of Hotel": {
+            "capacity": 600,
+            "base_price": 250,
+            "amenities": [
+                "Wi-Fi",
+                "TV",
+                "AC",
+                "Kitchenette",
+                "Balcony",
+                "SPA",
+                "RESTRAUNTS",
+                "VEGAN RESTRAUNTS",
+                "CHILD CARE",
+                "BABY FOOD"
+            ]
+        },
+        "Cancellation_policy": [
+            "Cancel Anytime"
+        ],
+        "pet frendly": "not pet friendly"
+    },
+    {
+        "Hotel ID": "HOTEL_050",
+        "Hotel Name": "Design Hotels New York",
+        "Hotel Type": "Collections",
+        "brand name": "Design Hotels",
+        "City": "New York",
+        "Address": "17 Main St",
+        "Star Rating": 1,
+        "Attributes of Hotel": {
+            "capacity": 100,
+            "base_price": 300,
+            "amenities": [
+                "Wi-Fi",
+                "TV",
+                "AC",
+                "Picaso Paintings",
+                "Laundry"
+            ]
+        },
+        "Cancellation_policy": [
+            "Free cancellation till 24hrs before check-in"
+        ],
+        "pet frendly": "not pet friendly"
+    },
+    {
+        "Hotel ID": "HOTEL_051",
+        "Hotel Name": "Gaylord Hotels Bangkok",
+        "Hotel Type": "Premium",
+        "brand name": "Gaylord Hotels",
+        "City": "Bangkok",
+        "Address": "52 Oxford St",
+        "Star Rating": 1,
+        "Attributes of Hotel": {
+            "capacity": 600,
+            "base_price": 250,
+            "amenities": [
+                "Wi-Fi",
+                "TV",
+                "AC",
+                "Kitchenette",
+                "Balcony",
+                "SPA",
+                "RESTRAUNTS",
+                "VEGAN RESTRAUNTS",
+                "CHILD CARE",
+                "BABY FOOD"
+            ]
+        },
+        "Cancellation_policy": [
+            "Free cancellation till 48hrs before check-in"
+        ],
+        "pet frendly": "not pet friendly"
+    },
+    {
+        "Hotel ID": "HOTEL_052",
+        "Hotel Name": "Marriott Executive Apartments Dubai",
+        "Hotel Type": "Longer Stays",
+        "brand name": "Marriott Executive Apartments",
+        "City": "Dubai",
+        "Address": "30 Ginza",
+        "Star Rating": 5,
+        "Attributes of Hotel": {
+            "capacity": 150,
+            "base_price": 200,
+            "amenities": [
+                "Wi-Fi",
+                "TV",
+                "AC",
+                "Two Bedrooms",
+                "Laundry"
+            ]
+        },
+        "Cancellation_policy": [
+            "Cancel Anytime"
+        ],
+        "pet frendly": "not pet friendly"
+    },
+    {
+        "Hotel ID": "HOTEL_053",
+        "Hotel Name": "Apartments by Marriott Bonvoy London",
+        "Hotel Type": "Longer Stays",
+        "brand name": "Apartments by Marriott Bonvoy",
+        "City": "London",
+        "Address": "75 Champs-\u00c9lys\u00e9es",
+        "Star Rating": 4,
+        "Attributes of Hotel": {
+            "capacity": 150,
+            "base_price": 200,
+            "amenities": [
+                "Wi-Fi",
+                "TV",
+                "AC",
+                "Two Bedrooms",
+                "Laundry"
+            ]
+        },
+        "Cancellation_policy": [
+            "Cancel Anytime"
+        ],
+        "pet frendly": "not pet friendly"
+    },
+    {
+        "Hotel ID": "HOTEL_054",
+        "Hotel Name": "Marriott Hotels London",
+        "Hotel Type": "Premium",
+        "brand name": "Marriott Hotels",
+        "City": "London",
+        "Address": "49 Oxford St",
+        "Star Rating": 1,
+        "Attributes of Hotel": {
+            "capacity": 600,
+            "base_price": 250,
+            "amenities": [
+                "Wi-Fi",
+                "TV",
+                "AC",
+                "Kitchenette",
+                "Balcony",
+                "SPA",
+                "RESTRAUNTS",
+                "VEGAN RESTRAUNTS",
+                "CHILD CARE",
+                "BABY FOOD"
+            ]
+        },
+        "Cancellation_policy": [
+            "Free cancellation till 24hrs before check-in"
+        ],
+        "pet frendly": "not pet friendly"
+    },
+    {
+        "Hotel ID": "HOTEL_055",
+        "Hotel Name": "Design Hotels Tokyo",
+        "Hotel Type": "Collections",
+        "brand name": "Design Hotels",
+        "City": "Tokyo",
+        "Address": "99 Main St",
+        "Star Rating": 4,
+        "Attributes of Hotel": {
+            "capacity": 100,
+            "base_price": 300,
+            "amenities": [
+                "Wi-Fi",
+                "TV",
+                "AC",
+                "Picaso Paintings",
+                "Laundry"
+            ]
+        },
+        "Cancellation_policy": [
+            "Free cancellation till 72hrs before check in"
+        ],
+        "pet frendly": "not pet friendly"
+    },
+    {
+        "Hotel ID": "HOTEL_056",
+        "Hotel Name": "Gaylord Hotels Bangkok",
+        "Hotel Type": "Premium",
+        "brand name": "Gaylord Hotels",
+        "City": "Bangkok",
+        "Address": "26 Champs-\u00c9lys\u00e9es",
+        "Star Rating": 1,
+        "Attributes of Hotel": {
+            "capacity": 600,
+            "base_price": 250,
+            "amenities": [
+                "Wi-Fi",
+                "TV",
+                "AC",
+                "Kitchenette",
+                "Balcony",
+                "SPA",
+                "RESTRAUNTS",
+                "VEGAN RESTRAUNTS",
+                "CHILD CARE",
+                "BABY FOOD"
+            ]
+        },
+        "Cancellation_policy": [
+            "Free cancellation till 24hrs before check-in"
+        ],
+        "pet frendly": "not pet friendly"
+    },
+    {
+        "Hotel ID": "HOTEL_057",
+        "Hotel Name": "The Luxury Collection Dubai",
+        "Hotel Type": "Luxury",
+        "brand name": "The Luxury Collection",
+        "City": "Dubai",
+        "Address": "76 Ginza",
+        "Star Rating": 3,
+        "Attributes of Hotel": {
+            "capacity": 800,
+            "base_price": 500,
+            "amenities": [
+                "Wi-Fi",
+                "TV",
+                "AC",
+                "SPA",
+                "RESORT",
+                "RESTRAUNTS",
+                "VEGAN RESTRAUNTS",
+                "CHILD CARE",
+                "BABY FOOD",
+                "SUITES"
+            ]
+        },
+        "Cancellation_policy": [
+            "Free cancellation till 72hrs before check in"
+        ],
+        "pet frendly": "not pet friendly"
+    },
+    {
+        "Hotel ID": "HOTEL_058",
+        "Hotel Name": "Element Hotels Bangkok",
+        "Hotel Type": "Longer Stays",
+        "brand name": "Element Hotels",
+        "City": "Bangkok",
+        "Address": "82 Champs-\u00c9lys\u00e9es",
+        "Star Rating": 2,
+        "Attributes of Hotel": {
+            "capacity": 150,
+            "base_price": 200,
+            "amenities": [
+                "Wi-Fi",
+                "TV",
+                "AC",
+                "Two Bedrooms",
+                "Laundry"
+            ]
+        },
+        "Cancellation_policy": [
+            "Free cancellation till 48hrs before check-in"
+        ],
+        "pet frendly": {
+            "pet_friendly": true,
+            "pet_fee": 50,
+            "pet_weight limit in pounds": 40
+        }
+    },
+    {
+        "Hotel ID": "HOTEL_059",
+        "Hotel Name": "TownePlace Suites Bangkok",
+        "Hotel Type": "Longer Stays",
+        "brand name": "TownePlace Suites",
+        "City": "Bangkok",
+        "Address": "11 Champs-\u00c9lys\u00e9es",
+        "Star Rating": 2,
+        "Attributes of Hotel": {
+            "capacity": 150,
+            "base_price": 200,
+            "amenities": [
+                "Wi-Fi",
+                "TV",
+                "AC",
+                "Two Bedrooms",
+                "Laundry"
+            ]
+        },
+        "Cancellation_policy": [
+            "Free cancellation till 24hrs before check-in"
+        ],
+        "pet frendly": "not pet friendly"
+    },
+    {
+        "Hotel ID": "HOTEL_060",
+        "Hotel Name": "Design Hotels London",
+        "Hotel Type": "Collections",
+        "brand name": "Design Hotels",
+        "City": "London",
+        "Address": "13 Main St",
+        "Star Rating": 5,
+        "Attributes of Hotel": {
+            "capacity": 100,
+            "base_price": 300,
+            "amenities": [
+                "Wi-Fi",
+                "TV",
+                "AC",
+                "Picaso Paintings",
+                "Laundry"
+            ]
+        },
+        "Cancellation_policy": [
+            "Free cancellation till 72hrs before check in"
+        ],
+        "pet frendly": "not pet friendly"
+    },
+    {
+        "Hotel ID": "HOTEL_061",
+        "Hotel Name": "Design Hotels Dubai",
+        "Hotel Type": "Collections",
+        "brand name": "Design Hotels",
+        "City": "Dubai",
+        "Address": "32 Ginza",
+        "Star Rating": 3,
+        "Attributes of Hotel": {
+            "capacity": 100,
+            "base_price": 300,
+            "amenities": [
+                "Wi-Fi",
+                "TV",
+                "AC",
+                "Picaso Paintings",
+                "Laundry"
+            ]
+        },
+        "Cancellation_policy": [
+            "Cancel Anytime"
+        ],
+        "pet frendly": "not pet friendly"
+    },
+    {
+        "Hotel ID": "HOTEL_062",
+        "Hotel Name": "Autograph Collection New York",
+        "Hotel Type": "Collections",
+        "brand name": "Autograph Collection",
+        "City": "New York",
+        "Address": "67 Champs-\u00c9lys\u00e9es",
+        "Star Rating": 4,
+        "Attributes of Hotel": {
+            "capacity": 100,
+            "base_price": 300,
+            "amenities": [
+                "Wi-Fi",
+                "TV",
+                "AC",
+                "Picaso Paintings",
+                "Laundry"
+            ]
+        },
+        "Cancellation_policy": [
+            "Free cancellation till 24hrs before check-in"
+        ],
+        "pet frendly": {
+            "pet_friendly": true,
+            "pet_fee": 150,
+            "pet_weight limit in pounds": 40
+        }
+    },
+    {
+        "Hotel ID": "HOTEL_063",
+        "Hotel Name": "Westin London",
+        "Hotel Type": "Premium",
+        "brand name": "Westin",
+        "City": "London",
+        "Address": "23 Champs-\u00c9lys\u00e9es",
+        "Star Rating": 1,
+        "Attributes of Hotel": {
+            "capacity": 600,
+            "base_price": 250,
+            "amenities": [
+                "Wi-Fi",
+                "TV",
+                "AC",
+                "Kitchenette",
+                "Balcony",
+                "SPA",
+                "RESTRAUNTS",
+                "VEGAN RESTRAUNTS",
+                "CHILD CARE",
+                "BABY FOOD"
+            ]
+        },
+        "Cancellation_policy": [
+            "Free cancellation till 48hrs before check-in"
+        ],
+        "pet frendly": "not pet friendly"
+    },
+    {
+        "Hotel ID": "HOTEL_064",
+        "Hotel Name": "Tribute Portfolio Dubai",
+        "Hotel Type": "Collections",
+        "brand name": "Tribute Portfolio",
+        "City": "Dubai",
+        "Address": "90 Oxford St",
+        "Star Rating": 3,
+        "Attributes of Hotel": {
+            "capacity": 100,
+            "base_price": 300,
+            "amenities": [
+                "Wi-Fi",
+                "TV",
+                "AC",
+                "Picaso Paintings",
+                "Laundry"
+            ]
+        },
+        "Cancellation_policy": [
+            "Cancel Anytime"
+        ],
+        "pet frendly": "not pet friendly"
+    },
+    {
+        "Hotel ID": "HOTEL_065",
+        "Hotel Name": "Design Hotels Dubai",
+        "Hotel Type": "Collections",
+        "brand name": "Design Hotels",
+        "City": "Dubai",
+        "Address": "84 Ginza",
+        "Star Rating": 5,
+        "Attributes of Hotel": {
+            "capacity": 100,
+            "base_price": 300,
+            "amenities": [
+                "Wi-Fi",
+                "TV",
+                "AC",
+                "Picaso Paintings",
+                "Laundry"
+            ]
+        },
+        "Cancellation_policy": [
+            "Free cancellation till 24hrs before check-in"
+        ],
+        "pet frendly": "not pet friendly"
+    },
+    {
+        "Hotel ID": "HOTEL_066",
+        "Hotel Name": "The Luxury Collection London",
+        "Hotel Type": "Luxury",
+        "brand name": "The Luxury Collection",
+        "City": "London",
+        "Address": "64 Main St",
+        "Star Rating": 5,
+        "Attributes of Hotel": {
+            "capacity": 800,
+            "base_price": 500,
+            "amenities": [
+                "Wi-Fi",
+                "TV",
+                "AC",
+                "SPA",
+                "RESORT",
+                "RESTRAUNTS",
+                "VEGAN RESTRAUNTS",
+                "CHILD CARE",
+                "BABY FOOD",
+                "SUITES"
+            ]
+        },
+        "Cancellation_policy": [
+            "Free cancellation till 72hrs before check in"
+        ],
+        "pet frendly": "not pet friendly"
+    },
+    {
+        "Hotel ID": "HOTEL_067",
+        "Hotel Name": "AC Hotels Sydney",
+        "Hotel Type": "Select",
+        "brand name": "AC Hotels",
+        "City": "Sydney",
+        "Address": "11 Champs-\u00c9lys\u00e9es",
+        "Star Rating": 5,
+        "Attributes of Hotel": {
+            "capacity": 250,
+            "base_price": 150,
+            "amenities": [
+                "Wi-Fi",
+                "TV",
+                "AC"
+            ]
+        },
+        "Cancellation_policy": [
+            "Free cancellation till 24hrs before check-in"
+        ],
+        "pet frendly": {
+            "pet_friendly": true,
+            "pet_fee": 100,
+            "pet_weight limit in pounds": 40
+        }
+    },
+    {
+        "Hotel ID": "HOTEL_068",
+        "Hotel Name": "EDITION Rome",
+        "Hotel Type": "Luxury",
+        "brand name": "EDITION",
+        "City": "Rome",
+        "Address": "52 Main St",
+        "Star Rating": 4,
+        "Attributes of Hotel": {
+            "capacity": 800,
+            "base_price": 500,
+            "amenities": [
+                "Wi-Fi",
+                "TV",
+                "AC",
+                "SPA",
+                "RESORT",
+                "RESTRAUNTS",
+                "VEGAN RESTRAUNTS",
+                "CHILD CARE",
+                "BABY FOOD",
+                "SUITES"
+            ]
+        },
+        "Cancellation_policy": [
+            "Free cancellation till 72hrs before check in"
+        ],
+        "pet frendly": "not pet friendly"
+    },
+    {
+        "Hotel ID": "HOTEL_069",
+        "Hotel Name": "MGM Collection with Marriott Bonvoy Bangkok",
+        "Hotel Type": "Collections",
+        "brand name": "MGM Collection with Marriott Bonvoy",
+        "City": "Bangkok",
+        "Address": "30 Main St",
+        "Star Rating": 4,
+        "Attributes of Hotel": {
+            "capacity": 100,
+            "base_price": 300,
+            "amenities": [
+                "Wi-Fi",
+                "TV",
+                "AC",
+                "Picaso Paintings",
+                "Laundry"
+            ]
+        },
+        "Cancellation_policy": [
+            "Free cancellation till 24hrs before check-in"
+        ],
+        "pet frendly": "not pet friendly"
+    },
+    {
+        "Hotel ID": "HOTEL_070",
+        "Hotel Name": "The Ritz-Carlton London",
+        "Hotel Type": "Luxury",
+        "brand name": "The Ritz-Carlton",
+        "City": "London",
+        "Address": "90 Main St",
+        "Star Rating": 4,
+        "Attributes of Hotel": {
+            "capacity": 800,
+            "base_price": 500,
+            "amenities": [
+                "Wi-Fi",
+                "TV",
+                "AC",
+                "SPA",
+                "RESORT",
+                "RESTRAUNTS",
+                "VEGAN RESTRAUNTS",
+                "CHILD CARE",
+                "BABY FOOD",
+                "SUITES"
+            ]
+        },
+        "Cancellation_policy": [
+            "Free cancellation till 24hrs before check-in"
+        ],
+        "pet frendly": {
+            "pet_friendly": true,
+            "pet_fee": 150,
+            "pet_weight limit in pounds": 30
+        }
+    },
+    {
+        "Hotel ID": "HOTEL_071",
+        "Hotel Name": "MGM Collection with Marriott Bonvoy Dubai",
+        "Hotel Type": "Collections",
+        "brand name": "MGM Collection with Marriott Bonvoy",
+        "City": "Dubai",
+        "Address": "16 Oxford St",
+        "Star Rating": 4,
+        "Attributes of Hotel": {
+            "capacity": 100,
+            "base_price": 300,
+            "amenities": [
+                "Wi-Fi",
+                "TV",
+                "AC",
+                "Picaso Paintings",
+                "Laundry"
+            ]
+        },
+        "Cancellation_policy": [
+            "Free cancellation till 72hrs before check in"
+        ],
+        "pet frendly": "not pet friendly"
+    },
+    {
+        "Hotel ID": "HOTEL_072",
+        "Hotel Name": "Gaylord Hotels Rome",
+        "Hotel Type": "Premium",
+        "brand name": "Gaylord Hotels",
+        "City": "Rome",
+        "Address": "41 Oxford St",
+        "Star Rating": 5,
+        "Attributes of Hotel": {
+            "capacity": 600,
+            "base_price": 250,
+            "amenities": [
+                "Wi-Fi",
+                "TV",
+                "AC",
+                "Kitchenette",
+                "Balcony",
+                "SPA",
+                "RESTRAUNTS",
+                "VEGAN RESTRAUNTS",
+                "CHILD CARE",
+                "BABY FOOD"
+            ]
+        },
+        "Cancellation_policy": [
+            "Cancel Anytime"
+        ],
+        "pet frendly": "not pet friendly"
+    },
+    {
+        "Hotel ID": "HOTEL_073",
+        "Hotel Name": "Sheraton Dubai",
+        "Hotel Type": "Premium",
+        "brand name": "Sheraton",
+        "City": "Dubai",
+        "Address": "66 Champs-\u00c9lys\u00e9es",
+        "Star Rating": 4,
+        "Attributes of Hotel": {
+            "capacity": 600,
+            "base_price": 250,
+            "amenities": [
+                "Wi-Fi",
+                "TV",
+                "AC",
+                "Kitchenette",
+                "Balcony",
+                "SPA",
+                "RESTRAUNTS",
+                "VEGAN RESTRAUNTS",
+                "CHILD CARE",
+                "BABY FOOD"
+            ]
+        },
+        "Cancellation_policy": [
+            "Free cancellation till 24hrs before check-in"
+        ],
+        "pet frendly": "not pet friendly"
+    },
+    {
+        "Hotel ID": "HOTEL_074",
+        "Hotel Name": "Fairfield Inn & Suites Sydney",
+        "Hotel Type": "Select",
+        "brand name": "Fairfield Inn & Suites",
+        "City": "Sydney",
+        "Address": "59 Ginza",
+        "Star Rating": 2,
+        "Attributes of Hotel": {
+            "capacity": 250,
+            "base_price": 150,
+            "amenities": [
+                "Wi-Fi",
+                "TV",
+                "AC"
+            ]
+        },
+        "Cancellation_policy": [
+            "Free cancellation till 48hrs before check-in"
+        ],
+        "pet frendly": "not pet friendly"
+    },
+    {
+        "Hotel ID": "HOTEL_075",
+        "Hotel Name": "The Luxury Collection Paris",
+        "Hotel Type": "Luxury",
+        "brand name": "The Luxury Collection",
+        "City": "Paris",
+        "Address": "85 Oxford St",
+        "Star Rating": 4,
+        "Attributes of Hotel": {
+            "capacity": 800,
+            "base_price": 500,
+            "amenities": [
+                "Wi-Fi",
+                "TV",
+                "AC",
+                "SPA",
+                "RESORT",
+                "RESTRAUNTS",
+                "VEGAN RESTRAUNTS",
+                "CHILD CARE",
+                "BABY FOOD",
+                "SUITES"
+            ]
+        },
+        "Cancellation_policy": [
+            "Cancel Anytime"
+        ],
+        "pet frendly": "not pet friendly"
+    },
+    {
+        "Hotel ID": "HOTEL_076",
+        "Hotel Name": "Apartments by Marriott Bonvoy Rome",
+        "Hotel Type": "Longer Stays",
+        "brand name": "Apartments by Marriott Bonvoy",
+        "City": "Rome",
+        "Address": "44 Main St",
+        "Star Rating": 3,
+        "Attributes of Hotel": {
+            "capacity": 150,
+            "base_price": 200,
+            "amenities": [
+                "Wi-Fi",
+                "TV",
+                "AC",
+                "Two Bedrooms",
+                "Laundry"
+            ]
+        },
+        "Cancellation_policy": [
+            "Free cancellation till 24hrs before check-in"
+        ],
+        "pet frendly": "not pet friendly"
+    },
+    {
+        "Hotel ID": "HOTEL_077",
+        "Hotel Name": "JW Marriott Rome",
+        "Hotel Type": "Luxury",
+        "brand name": "JW Marriott",
+        "City": "Rome",
+        "Address": "58 Oxford St",
+        "Star Rating": 2,
+        "Attributes of Hotel": {
+            "capacity": 800,
+            "base_price": 500,
+            "amenities": [
+                "Wi-Fi",
+                "TV",
+                "AC",
+                "SPA",
+                "RESORT",
+                "RESTRAUNTS",
+                "VEGAN RESTRAUNTS",
+                "CHILD CARE",
+                "BABY FOOD",
+                "SUITES"
+            ]
+        },
+        "Cancellation_policy": [
+            "Cancel Anytime"
+        ],
+        "pet frendly": {
+            "pet_friendly": true,
+            "pet_fee": 150,
+            "pet_weight limit in pounds": 40
+        }
+    },
+    {
+        "Hotel ID": "HOTEL_078",
+        "Hotel Name": "Delta Hotels by Marriott London",
+        "Hotel Type": "Premium",
+        "brand name": "Delta Hotels by Marriott",
+        "City": "London",
+        "Address": "3 Ginza",
+        "Star Rating": 1,
+        "Attributes of Hotel": {
+            "capacity": 600,
+            "base_price": 250,
+            "amenities": [
+                "Wi-Fi",
+                "TV",
+                "AC",
+                "Kitchenette",
+                "Balcony",
+                "SPA",
+                "RESTRAUNTS",
+                "VEGAN RESTRAUNTS",
+                "CHILD CARE",
+                "BABY FOOD"
+            ]
+        },
+        "Cancellation_policy": [
+            "Free cancellation till 72hrs before check in"
+        ],
+        "pet frendly": "not pet friendly"
+    },
+    {
+        "Hotel ID": "HOTEL_079",
+        "Hotel Name": "Protea Hotels London",
+        "Hotel Type": "Select",
+        "brand name": "Protea Hotels",
+        "City": "London",
+        "Address": "58 Main St",
+        "Star Rating": 4,
+        "Attributes of Hotel": {
+            "capacity": 250,
+            "base_price": 150,
+            "amenities": [
+                "Wi-Fi",
+                "TV",
+                "AC"
+            ]
+        },
+        "Cancellation_policy": [
+            "Free cancellation till 72hrs before check in"
+        ],
+        "pet frendly": "not pet friendly"
+    },
+    {
+        "Hotel ID": "HOTEL_080",
+        "Hotel Name": "Design Hotels Tokyo",
+        "Hotel Type": "Collections",
+        "brand name": "Design Hotels",
+        "City": "Tokyo",
+        "Address": "14 Oxford St",
+        "Star Rating": 3,
+        "Attributes of Hotel": {
+            "capacity": 100,
+            "base_price": 300,
+            "amenities": [
+                "Wi-Fi",
+                "TV",
+                "AC",
+                "Picaso Paintings",
+                "Laundry"
+            ]
+        },
+        "Cancellation_policy": [
+            "Free cancellation till 72hrs before check in"
+        ],
+        "pet frendly": "not pet friendly"
+    },
+    {
+        "Hotel ID": "HOTEL_081",
+        "Hotel Name": "Four Points by Sheraton New York",
+        "Hotel Type": "Select",
+        "brand name": "Four Points by Sheraton",
+        "City": "New York",
+        "Address": "64 Champs-\u00c9lys\u00e9es",
+        "Star Rating": 3,
+        "Attributes of Hotel": {
+            "capacity": 250,
+            "base_price": 150,
+            "amenities": [
+                "Wi-Fi",
+                "TV",
+                "AC"
+            ]
+        },
+        "Cancellation_policy": [
+            "Free cancellation till 48hrs before check-in"
+        ],
+        "pet frendly": "not pet friendly"
+    },
+    {
+        "Hotel ID": "HOTEL_082",
+        "Hotel Name": "Gaylord Hotels Rome",
+        "Hotel Type": "Premium",
+        "brand name": "Gaylord Hotels",
+        "City": "Rome",
+        "Address": "15 Oxford St",
+        "Star Rating": 2,
+        "Attributes of Hotel": {
+            "capacity": 600,
+            "base_price": 250,
+            "amenities": [
+                "Wi-Fi",
+                "TV",
+                "AC",
+                "Kitchenette",
+                "Balcony",
+                "SPA",
+                "RESTRAUNTS",
+                "VEGAN RESTRAUNTS",
+                "CHILD CARE",
+                "BABY FOOD"
+            ]
+        },
+        "Cancellation_policy": [
+            "Free cancellation till 24hrs before check-in"
+        ],
+        "pet frendly": "not pet friendly"
+    },
+    {
+        "Hotel ID": "HOTEL_083",
+        "Hotel Name": "Marriott Vacation Club Dubai",
+        "Hotel Type": "Premium",
+        "brand name": "Marriott Vacation Club",
+        "City": "Dubai",
+        "Address": "41 Main St",
+        "Star Rating": 3,
+        "Attributes of Hotel": {
+            "capacity": 600,
+            "base_price": 250,
+            "amenities": [
+                "Wi-Fi",
+                "TV",
+                "AC",
+                "Kitchenette",
+                "Balcony",
+                "SPA",
+                "RESTRAUNTS",
+                "VEGAN RESTRAUNTS",
+                "CHILD CARE",
+                "BABY FOOD"
+            ]
+        },
+        "Cancellation_policy": [
+            "Cancel Anytime"
+        ],
+        "pet frendly": "not pet friendly"
+    },
+    {
+        "Hotel ID": "HOTEL_084",
+        "Hotel Name": "Residence Inn Tokyo",
+        "Hotel Type": "Longer Stays",
+        "brand name": "Residence Inn",
+        "City": "Tokyo",
+        "Address": "34 Ginza",
+        "Star Rating": 3,
+        "Attributes of Hotel": {
+            "capacity": 150,
+            "base_price": 200,
+            "amenities": [
+                "Wi-Fi",
+                "TV",
+                "AC",
+                "Two Bedrooms",
+                "Laundry"
+            ]
+        },
+        "Cancellation_policy": [
+            "Free cancellation till 48hrs before check-in"
+        ],
+        "pet frendly": {
+            "pet_friendly": true,
+            "pet_fee": 100,
+            "pet_weight limit in pounds": 50
+        }
+    },
+    {
+        "Hotel ID": "HOTEL_085",
+        "Hotel Name": "SpringHill Suites Sydney",
+        "Hotel Type": "Select",
+        "brand name": "SpringHill Suites",
+        "City": "Sydney",
+        "Address": "92 Ginza",
+        "Star Rating": 2,
+        "Attributes of Hotel": {
+            "capacity": 250,
+            "base_price": 150,
+            "amenities": [
+                "Wi-Fi",
+                "TV",
+                "AC"
+            ]
+        },
+        "Cancellation_policy": [
+            "Cancel Anytime"
+        ],
+        "pet frendly": "not pet friendly"
+    },
+    {
+        "Hotel ID": "HOTEL_086",
+        "Hotel Name": "TownePlace Suites London",
+        "Hotel Type": "Longer Stays",
+        "brand name": "TownePlace Suites",
+        "City": "London",
+        "Address": "80 Ginza",
+        "Star Rating": 2,
+        "Attributes of Hotel": {
+            "capacity": 150,
+            "base_price": 200,
+            "amenities": [
+                "Wi-Fi",
+                "TV",
+                "AC",
+                "Two Bedrooms",
+                "Laundry"
+            ]
+        },
+        "Cancellation_policy": [
+            "Free cancellation till 72hrs before check in"
+        ],
+        "pet frendly": "not pet friendly"
+    },
+    {
+        "Hotel ID": "HOTEL_087",
+        "Hotel Name": "Tribute Portfolio London",
+        "Hotel Type": "Collections",
+        "brand name": "Tribute Portfolio",
+        "City": "London",
+        "Address": "82 Main St",
+        "Star Rating": 4,
+        "Attributes of Hotel": {
+            "capacity": 100,
+            "base_price": 300,
+            "amenities": [
+                "Wi-Fi",
+                "TV",
+                "AC",
+                "Picaso Paintings",
+                "Laundry"
+            ]
+        },
+        "Cancellation_policy": [
+            "Free cancellation till 48hrs before check-in"
+        ],
+        "pet frendly": "not pet friendly"
+    },
+    {
+        "Hotel ID": "HOTEL_088",
+        "Hotel Name": "AC Hotels Rome",
+        "Hotel Type": "Select",
+        "brand name": "AC Hotels",
+        "City": "Rome",
+        "Address": "40 Champs-\u00c9lys\u00e9es",
+        "Star Rating": 2,
+        "Attributes of Hotel": {
+            "capacity": 250,
+            "base_price": 150,
+            "amenities": [
+                "Wi-Fi",
+                "TV",
+                "AC"
+            ]
+        },
+        "Cancellation_policy": [
+            "Free cancellation till 72hrs before check in"
+        ],
+        "pet frendly": {
+            "pet_friendly": true,
+            "pet_fee": 100,
+            "pet_weight limit in pounds": 40
+        }
+    },
+    {
+        "Hotel ID": "HOTEL_089",
+        "Hotel Name": "MGM Collection with Marriott Bonvoy Bangkok",
+        "Hotel Type": "Collections",
+        "brand name": "MGM Collection with Marriott Bonvoy",
+        "City": "Bangkok",
+        "Address": "95 Main St",
+        "Star Rating": 2,
+        "Attributes of Hotel": {
+            "capacity": 100,
+            "base_price": 300,
+            "amenities": [
+                "Wi-Fi",
+                "TV",
+                "AC",
+                "Picaso Paintings",
+                "Laundry"
+            ]
+        },
+        "Cancellation_policy": [
+            "Free cancellation till 72hrs before check in"
+        ],
+        "pet frendly": "not pet friendly"
+    },
+    {
+        "Hotel ID": "HOTEL_090",
+        "Hotel Name": "Homes & Villas by Marriott Bonvoy Paris",
+        "Hotel Type": "Longer Stays",
+        "brand name": "Homes & Villas by Marriott Bonvoy",
+        "City": "Paris",
+        "Address": "59 Main St",
+        "Star Rating": 1,
+        "Attributes of Hotel": {
+            "capacity": 150,
+            "base_price": 200,
+            "amenities": [
+                "Wi-Fi",
+                "TV",
+                "AC",
+                "Two Bedrooms",
+                "Laundry"
+            ]
+        },
+        "Cancellation_policy": [
+            "Free cancellation till 48hrs before check-in"
+        ],
+        "pet frendly": "not pet friendly"
+    },
+    {
+        "Hotel ID": "HOTEL_091",
+        "Hotel Name": "Tribute Portfolio Paris",
+        "Hotel Type": "Collections",
+        "brand name": "Tribute Portfolio",
+        "City": "Paris",
+        "Address": "19 Champs-\u00c9lys\u00e9es",
+        "Star Rating": 3,
+        "Attributes of Hotel": {
+            "capacity": 100,
+            "base_price": 300,
+            "amenities": [
+                "Wi-Fi",
+                "TV",
+                "AC",
+                "Picaso Paintings",
+                "Laundry"
+            ]
+        },
+        "Cancellation_policy": [
+            "Free cancellation till 72hrs before check in"
+        ],
+        "pet frendly": "not pet friendly"
+    },
+    {
+        "Hotel ID": "HOTEL_092",
+        "Hotel Name": "Renaissance Hotels Dubai",
+        "Hotel Type": "Premium",
+        "brand name": "Renaissance Hotels",
+        "City": "Dubai",
+        "Address": "16 Ginza",
+        "Star Rating": 3,
+        "Attributes of Hotel": {
+            "capacity": 600,
+            "base_price": 250,
+            "amenities": [
+                "Wi-Fi",
+                "TV",
+                "AC",
+                "Kitchenette",
+                "Balcony",
+                "SPA",
+                "RESTRAUNTS",
+                "VEGAN RESTRAUNTS",
+                "CHILD CARE",
+                "BABY FOOD"
+            ]
+        },
+        "Cancellation_policy": [
+            "Free cancellation till 48hrs before check-in"
+        ],
+        "pet frendly": "not pet friendly"
+    },
+    {
+        "Hotel ID": "HOTEL_093",
+        "Hotel Name": "Sheraton New York",
+        "Hotel Type": "Premium",
+        "brand name": "Sheraton",
+        "City": "New York",
+        "Address": "38 Ginza",
+        "Star Rating": 4,
+        "Attributes of Hotel": {
+            "capacity": 600,
+            "base_price": 250,
+            "amenities": [
+                "Wi-Fi",
+                "TV",
+                "AC",
+                "Kitchenette",
+                "Balcony",
+                "SPA",
+                "RESTRAUNTS",
+                "VEGAN RESTRAUNTS",
+                "CHILD CARE",
+                "BABY FOOD"
+            ]
+        },
+        "Cancellation_policy": [
+            "Cancel Anytime"
+        ],
+        "pet frendly": "not pet friendly"
+    },
+    {
+        "Hotel ID": "HOTEL_094",
+        "Hotel Name": "Element Hotels Dubai",
+        "Hotel Type": "Longer Stays",
+        "brand name": "Element Hotels",
+        "City": "Dubai",
+        "Address": "96 Oxford St",
+        "Star Rating": 4,
+        "Attributes of Hotel": {
+            "capacity": 150,
+            "base_price": 200,
+            "amenities": [
+                "Wi-Fi",
+                "TV",
+                "AC",
+                "Two Bedrooms",
+                "Laundry"
+            ]
+        },
+        "Cancellation_policy": [
+            "Cancel Anytime"
+        ],
+        "pet frendly": {
+            "pet_friendly": true,
+            "pet_fee": 50,
+            "pet_weight limit in pounds": 40
+        }
+    },
+    {
+        "Hotel ID": "HOTEL_095",
+        "Hotel Name": "MGM Collection with Marriott Bonvoy Bangkok",
+        "Hotel Type": "Collections",
+        "brand name": "MGM Collection with Marriott Bonvoy",
+        "City": "Bangkok",
+        "Address": "18 Ginza",
+        "Star Rating": 3,
+        "Attributes of Hotel": {
+            "capacity": 100,
+            "base_price": 300,
+            "amenities": [
+                "Wi-Fi",
+                "TV",
+                "AC",
+                "Picaso Paintings",
+                "Laundry"
+            ]
+        },
+        "Cancellation_policy": [
+            "Cancel Anytime"
+        ],
+        "pet frendly": "not pet friendly"
+    },
+    {
+        "Hotel ID": "HOTEL_096",
+        "Hotel Name": "Homes & Villas by Marriott Bonvoy New York",
+        "Hotel Type": "Longer Stays",
+        "brand name": "Homes & Villas by Marriott Bonvoy",
+        "City": "New York",
+        "Address": "85 Champs-\u00c9lys\u00e9es",
+        "Star Rating": 2,
+        "Attributes of Hotel": {
+            "capacity": 150,
+            "base_price": 200,
+            "amenities": [
+                "Wi-Fi",
+                "TV",
+                "AC",
+                "Two Bedrooms",
+                "Laundry"
+            ]
+        },
+        "Cancellation_policy": [
+            "Free cancellation till 72hrs before check in"
+        ],
+        "pet frendly": "not pet friendly"
+    },
+    {
+        "Hotel ID": "HOTEL_097",
+        "Hotel Name": "Aloft Hotels Bangkok",
+        "Hotel Type": "Select",
+        "brand name": "Aloft Hotels",
+        "City": "Bangkok",
+        "Address": "70 Champs-\u00c9lys\u00e9es",
+        "Star Rating": 1,
+        "Attributes of Hotel": {
+            "capacity": 250,
+            "base_price": 150,
+            "amenities": [
+                "Wi-Fi",
+                "TV",
+                "AC"
+            ]
+        },
+        "Cancellation_policy": [
+            "Cancel Anytime"
+        ],
+        "pet frendly": {
+            "pet_friendly": true,
+            "pet_fee": 20,
+            "pet_weight limit in pounds": 40
+        }
+    },
+    {
+        "Hotel ID": "HOTEL_098",
+        "Hotel Name": "Apartments by Marriott Bonvoy Dubai",
+        "Hotel Type": "Longer Stays",
+        "brand name": "Apartments by Marriott Bonvoy",
+        "City": "Dubai",
+        "Address": "31 Main St",
+        "Star Rating": 2,
+        "Attributes of Hotel": {
+            "capacity": 150,
+            "base_price": 200,
+            "amenities": [
+                "Wi-Fi",
+                "TV",
+                "AC",
+                "Two Bedrooms",
+                "Laundry"
+            ]
+        },
+        "Cancellation_policy": [
+            "Free cancellation till 72hrs before check in"
+        ],
+        "pet frendly": "not pet friendly"
+    },
+    {
+        "Hotel ID": "HOTEL_099",
+        "Hotel Name": "Gaylord Hotels New York",
+        "Hotel Type": "Premium",
+        "brand name": "Gaylord Hotels",
+        "City": "New York",
+        "Address": "95 Champs-\u00c9lys\u00e9es",
+        "Star Rating": 4,
+        "Attributes of Hotel": {
+            "capacity": 600,
+            "base_price": 250,
+            "amenities": [
+                "Wi-Fi",
+                "TV",
+                "AC",
+                "Kitchenette",
+                "Balcony",
+                "SPA",
+                "RESTRAUNTS",
+                "VEGAN RESTRAUNTS",
+                "CHILD CARE",
+                "BABY FOOD"
+            ]
+        },
+        "Cancellation_policy": [
+            "Cancel Anytime"
+        ],
+        "pet frendly": "not pet friendly"
+    }
+]
