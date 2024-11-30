@@ -227,7 +227,8 @@ if __name__ == '__main__':
         cls_cust_name = find_customer_by_name(customer_data_path,cust_name)
         if cls_cust_name=="Customer not found.":
             use_details_fromUI = st.text_input("Customer doesn't seems to exist in database \nProvide trip purpose and other perference detials")
-
+        else:
+            use_details_fromUI="already provide"
         logger.info(f"closest customer name :{cls_cust_name} based on cust_name :{cust_name}")
         if st.sidebar.button("Close Session"):
             close_session(cust_name)
@@ -255,14 +256,15 @@ if __name__ == '__main__':
         #     # Now query the Gemini API with the retrieved text or the user's query
         #     # full_query = f"{response_text}\n\nQuestion: {user_query}\nAnswer:"
         #     # gemini_response = query_gemini_api(full_query, gemini_api_key)
-
-            prompt = "Use preference from the customer i.e., "+ cls_cust_name +" to create a response based on the available data " + user_query+" if customer details are not available then use the following details"+ use_details_fromUI
+            logger.info("closest name ",type(cls_cust_name))
+            logger.info("query ",type(user_query))
+            logger.info("use_details_fromUI ", type(use_details_fromUI))
+            prompt = ("Use preference from the customer i.e., "+ json.dumps(cls_cust_name) +
+                      " to create a response based on the available data " + user_query+
+                      " if customer details are not available then use the following details"+
+                      use_details_fromUI)
             logger.info(prompt)
             gemini_response = multiturn_generate_content(prompt)
             with st.chat_message("assistant"):
                 st.markdown(gemini_response.text)
             st.session_state['messages'].append({"role": "assistant", "content": gemini_response.text})
-
-
-
-
