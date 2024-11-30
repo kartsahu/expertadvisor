@@ -28,7 +28,17 @@ File > Settings > project:expertadvisor > Add interpeter to include the conda en
 
 ### 6. Launch the streamlit web app 
 Ensure the conda environment advexpert is enabled in Terminal
-Launch the web app by invoking the command python -m streamlit run C:\Users\<xxxx>\PycharmProjects\expertadvisor\Sakwatchen_streamlit_gemini_multi.py
+Launch the web app by invoking the command :
+  #### python -m streamlit run C:\Users\<xxxx>\PycharmProjects\expertadvisor\Sakwatchen_streamlit_gemini_multi.py
+The webapp will be automatically launched in http://localhost:8501/
+
+### 7. Interact with the web app 
+  In the web interface key in the customer name 
+  ![image](https://github.com/user-attachments/assets/0c2157eb-cb61-44ed-ad40-4f28ae6d5bdc)
+  Key in the query as follows and wait for response to be generated :
+  ![image](https://github.com/user-attachments/assets/64d40b41-61de-4e3e-9db0-061a05974196)
+
+
 
 
 
