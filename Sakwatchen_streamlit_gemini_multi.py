@@ -119,8 +119,8 @@ def multiturn_generate_content(user_input):
 
     generation_config = {
         "max_output_tokens": 8192,
-        "temperature": 1,
-        "top_p": 0.95,
+        "temperature": 0.1,
+        "top_p": 0.7,
     }
 
     safety_settings = [
