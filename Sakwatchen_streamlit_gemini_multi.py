@@ -6,7 +6,8 @@ import vertexai
 from vertexai.generative_models import GenerativeModel, SafetySetting, Part
 import os
 import logging as log
-# from google.colab import files
+import PyPDF2
+
 gemini_api_key = "470155914573"
 os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = "C:\\Users\\61011060\\PycharmProjects\\expertadvisor\\access\\sakwatchen-expertadvisor-912e382bba88.json"
 print(os.getenv('GOOGLE_APPLICATION_CREDENTIALS'))
@@ -14,18 +15,37 @@ print("compelted the credential setup")
 
 st.header("Chat bot")
 
-# os.environ["GOOGLE_APPLICATION_CREDENTIALS"]=C:\Users\61087069\sakwatchen-expertadvisor-912e382bba88.json
+os.environ["GOOGLE_APPLICATION_CREDENTIALS"]=os.path.join(os.getcwd(),".\\access\\gemini_key.json")
 
-# Create and configure logger
-log.basicConfig(filename="C:\\Users\\61011060\\Desktop\\hackathon\\pythonProject1\\newfile.txt",
-                    format='%(asctime)s %(message)s',filemode='w')
+ 
+log.basicConfig(filename=os.path.join(os.getcwd(),"newfile.log"),format='%(asctime)s %(message)s',filemode='w')
+logger = log.getLogger(__name__)
+ 
 
-# Creating an object
+
 
 logger = log.getLogger()
 # Setting the threshold of logger to DEBUG
 logger.setLevel(log.INFO)
+
 logger.info("Chatbot started")
+
+def reading_single_file(pdf_file_path):
+    file_data=[]
+    with open(pdf_file_path, 'rb') as file:
+        reader = PyPDF2.PdfFileReader(file)
+
+
+        num_pages = reader.numPages
+        print(f'Total pages: {num_pages}')
+
+    # Read each page
+        for page_num in range(num_pages):
+            page = reader.getPage(page_num)
+            text = page.extract_text()
+            file_data.append(text)
+            print(f'Page {page_num + 1}:\n{text}\n')
+    return file_data
 
 def extract_text_from_json(json_data):
     """
@@ -57,14 +77,22 @@ def read_and_extract_from_multiple_files(json_file_path):
     json_pattern = os.listdir(json_file_path)
     logger.info(json_pattern)
     for file in json_pattern:
+
         file_w_path = os.path.join(json_file_path, file)
-        try:
-            with open(file_w_path, 'r') as file_data:
-                json_data = json.load(file_data)
-                extracted_text = extract_text_from_json(json_data)
-                all_text.append(extracted_text)
-        except Exception as e:
-            print(f"Error reading {file_data}: {e}")
+        if file_w_path.endswith('.json'):
+
+            try:
+                with open(file_w_path, 'r') as file_data:
+                    json_data = json.load(file_data)
+                    extracted_text = extract_text_from_json(json_data)
+                    all_text.append(extracted_text)
+            except Exception as e:
+                print(f"Error reading {file_data}: {e}")
+
+        elif file_w_path.endswith('.pdf'):
+            all_text.append(reading_single_file(file_w_path))
+        else:
+            raise Exception(f"Invalid file format : {file_w_path}")
     return "\n\n".join(all_text)
 
 def multiturn_generate_content(user_input):
@@ -86,7 +114,7 @@ def multiturn_generate_content(user_input):
     vertexai.init(project="sakwatchen-expertadvisor", location="us-central1")
 
     model = GenerativeModel(
-        "gemini-1.5-flash-002",
+        "gemini-1.5-pro-002",
         system_instruction=[data_txt]
     )
 
@@ -143,8 +171,8 @@ def multiturn_generate_content(user_input):
         message,  # Pass the message as a string
         generation_config={
             "max_output_tokens": 1024,
-            "temperature": 0.7,
-            "top_p": 0.95,
+            "temperature": 0.1,
+            "top_p": 0.6,
         },
         safety_settings=[],
     )
