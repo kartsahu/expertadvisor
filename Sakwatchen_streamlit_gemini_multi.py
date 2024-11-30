@@ -9,22 +9,16 @@ import logging as log
 import PyPDF2
 
 gemini_api_key = "470155914573"
-os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = "C:\\Users\\61011060\\PycharmProjects\\expertadvisor\\access\\sakwatchen-expertadvisor-912e382bba88.json"
-print(os.getenv('GOOGLE_APPLICATION_CREDENTIALS'))
-print("compelted the credential setup")
-
-st.header("Chat bot")
-
 os.environ["GOOGLE_APPLICATION_CREDENTIALS"]=os.path.join(os.getcwd(),".\\access\\gemini_key.json")
 
- 
+
+print(os.getenv('GOOGLE_APPLICATION_CREDENTIALS'))
+print("compelted the credential setup")
+st.header("Chat bot")
+os.environ["GOOGLE_APPLICATION_CREDENTIALS"]=os.path.join(os.getcwd(),".\\access\\gemini_key.json")
 log.basicConfig(filename=os.path.join(os.getcwd(),"newfile.log"),format='%(asctime)s %(message)s',filemode='w')
 logger = log.getLogger(__name__)
- 
 
-
-
-logger = log.getLogger()
 # Setting the threshold of logger to DEBUG
 logger.setLevel(log.INFO)
 
