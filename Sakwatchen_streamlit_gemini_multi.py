@@ -8,20 +8,23 @@ import os
 import logging as log
 # from google.colab import files
 gemini_api_key = "470155914573"
+os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = "C:\\Users\\61011060\\PycharmProjects\\expertadvisor\\access\\sakwatchen-expertadvisor-912e382bba88.json"
+print(os.getenv('GOOGLE_APPLICATION_CREDENTIALS'))
+print("compelted the credential setup")
 
 st.header("Chat bot")
 
 # os.environ["GOOGLE_APPLICATION_CREDENTIALS"]=C:\Users\61087069\sakwatchen-expertadvisor-912e382bba88.json
 
 # Create and configure logger
-log.basicConfig(filename="C:\\Users\\61087069\\OneDrive - LTIMindtree\\Desktop\\hackathon\\pythonProject1\\newfile.log",
+log.basicConfig(filename="C:\\Users\\61011060\\Desktop\\hackathon\\pythonProject1\\newfile.txt",
                     format='%(asctime)s %(message)s',filemode='w')
 
 # Creating an object
 
 logger = log.getLogger()
 # Setting the threshold of logger to DEBUG
-logger.setLevel(log.DEBUG)
+logger.setLevel(log.INFO)
 logger.info("Chatbot started")
 
 def extract_text_from_json(json_data):
@@ -66,7 +69,7 @@ def read_and_extract_from_multiple_files(json_file_path):
 
 def multiturn_generate_content(user_input):
     #Read JSON file
-    json_file_path = "C:\\Users\\61087069\\OneDrive - LTIMindtree\\Desktop\\hackathon\\pythonProject1\\JSON"
+    json_file_path = "C:\\Users\\61011060\\Desktop\\hackathon\\pythonProject1\\data"
     contents = []
     #contents.append(os.read(file_w_path))
     combined_text = read_and_extract_from_multiple_files(json_file_path)
@@ -195,6 +198,7 @@ if __name__ == '__main__':
         #     # gemini_response = query_gemini_api(full_query, gemini_api_key)
 
             prompt = "Use preference from the customer i.e., "+ cust_name +" to create a response based on the available data " + user_query
+            logger.info(prompt)
             gemini_response = multiturn_generate_content(prompt)
             with st.chat_message("assistant"):
                 st.markdown(gemini_response.text)
