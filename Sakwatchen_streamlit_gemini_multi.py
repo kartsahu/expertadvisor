@@ -203,16 +203,21 @@ def find_customer_by_name(file_path, customer_name):
     try:
         with open(file_path, 'r') as file:
             data = json.load(file)
-
-        customer_names = [customer['name'] for customer in data]
-        closest_match = difflib.get_close_matches(customer_name, customer_names, n=1, cutoff=0.8)
-
-        if closest_match:
-            for customer in data:
-                if customer['name'] == closest_match[0]:
-                    return customer
-
-        return False
+        customer_names=[]
+        for customer_data in data:
+            customer_names.append(customer_data['name'].lower())
+        # st.text(customer_names)
+        # customer_names = [customer['name'] for customer in data]
+        # closest_match = difflib.get_close_matches(customer_name, customer_names, n=1, cutoff=0.8)
+        if customer_name.lower() in customer_names:
+            return customer_name
+        # if closest_match:
+        #     for customer in data:
+        #         if customer['name'] == closest_match[0]:
+        #             st.text(customer)
+        #             return customer
+        else:
+            return False
 
     except FileNotFoundError:
         return "File not found."
@@ -225,10 +230,10 @@ if __name__ == '__main__':
     cust_name = st.text_input('Please provide your customer Name')
     if cust_name:
         cls_cust_name = find_customer_by_name(customer_data_path,cust_name)
-        if cls_cust_name:
+        if not cls_cust_name:
             use_details_fromUI = st.text_input("Customer doesn't seems to exist in database \nProvide trip purpose and other perference detials")
         else:
-            # st.text(f"customer is found,{cls_cust_name} when {cust_name}")
+
             use_details_fromUI="already provide"
         logger.info(f"closest customer name :{cls_cust_name} based on cust_name :{cust_name}")
         if st.sidebar.button("Close Session"):
