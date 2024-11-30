@@ -168,6 +168,8 @@ def multiturn_generate_content(user_input):
     # Combine user input with extracted text if needed
     message = f"{data_txt}\n\n{user_input}"
     logger.info(message)
+
+    print(f"prompt sent to model beginning:\n {message}  \n end of prompt")
     # Send message to the model
     response = chat.send_message(
         message,  # Pass the message as a string
