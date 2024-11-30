@@ -91,7 +91,7 @@ def read_and_extract_from_multiple_files(json_file_path):
 
 def multiturn_generate_content(user_input):
     #Read JSON file
-    json_file_path = "C:\\Users\\61011060\\Desktop\\hackathon\\pythonProject1\\data"
+    json_file_path = ".\\data"
     contents = []
     #contents.append(os.read(file_w_path))
     combined_text = read_and_extract_from_multiple_files(json_file_path)
