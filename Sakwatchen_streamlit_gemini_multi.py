@@ -7,6 +7,7 @@ from vertexai.generative_models import GenerativeModel, SafetySetting, Part
 import os
 import logging as log
 import PyPDF2
+import difflib
 
 gemini_api_key = "470155914573"
 os.environ["GOOGLE_APPLICATION_CREDENTIALS"]=os.path.join(os.getcwd(),".\\access\\gemini_key.json")
@@ -16,6 +17,8 @@ print(os.getenv('GOOGLE_APPLICATION_CREDENTIALS'))
 print("compelted the credential setup")
 st.header("Chat bot")
 os.environ["GOOGLE_APPLICATION_CREDENTIALS"]=os.path.join(os.getcwd(),".\\access\\gemini_key.json")
+
+customer_data_path =os.path.join(os.getcwd(),".\\customer_dir\\customer_profiles.json")
 log.basicConfig(filename=os.path.join(os.getcwd(),"newfile.log"),format='%(asctime)s %(message)s',filemode='w')
 logger = log.getLogger(__name__)
 
@@ -193,10 +196,39 @@ def close_session(cust_name):
     save_chat_history(cust_name)
     st.session_state['messages'] = []
     st.experimental_rerun()
+
+
+
+def find_customer_by_name(file_path, customer_name):
+    try:
+        with open(file_path, 'r') as file:
+            data = json.load(file)
+
+        customer_names = [customer['name'] for customer in data]
+        closest_match = difflib.get_close_matches(customer_name, customer_names, n=1, cutoff=0.8)
+
+        if closest_match:
+            for customer in data:
+                if customer['name'] == closest_match[0]:
+                    return customer
+
+        return "Customer not found."
+
+    except FileNotFoundError:
+        return "File not found."
+    except json.JSONDecodeError:
+        return "Error decoding JSON."
+
+
 if __name__ == '__main__':
 
     cust_name = st.text_input('Please provide your customer Name')
     if cust_name:
+        cls_cust_name = find_customer_by_name(customer_data_path,cust_name)
+        if cls_cust_name=="Customer not found.":
+            use_details_fromUI = st.text_input("Customer doesn't seems to exist in database \nProvide trip purpose and other perference detials")
+
+        logger.info(f"closest customer name :{cls_cust_name} based on cust_name :{cust_name}")
         if st.sidebar.button("Close Session"):
             close_session(cust_name)
         if 'messages' not in st.session_state:
@@ -224,7 +256,7 @@ if __name__ == '__main__':
         #     # full_query = f"{response_text}\n\nQuestion: {user_query}\nAnswer:"
         #     # gemini_response = query_gemini_api(full_query, gemini_api_key)
 
-            prompt = "Use preference from the customer i.e., "+ cust_name +" to create a response based on the available data " + user_query
+            prompt = "Use preference from the customer i.e., "+ cls_cust_name +" to create a response based on the available data " + user_query+" if customer details are not available then use the following details"+ use_details_fromUI
             logger.info(prompt)
             gemini_response = multiturn_generate_content(prompt)
             with st.chat_message("assistant"):
