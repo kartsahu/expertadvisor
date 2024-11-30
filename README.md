@@ -32,7 +32,7 @@ Launch the web app by invoking the command :
   #### python -m streamlit run C:\Users\<xxxx>\PycharmProjects\expertadvisor\Sakwatchen_streamlit_gemini_multi.py
 The webapp will be automatically launched in http://localhost:8501/
 
-### 7. Launch the streamlit web app 
+### 7. Interact with the web app 
   In the web interface key in the customer name 
   ![image](https://github.com/user-attachments/assets/0c2157eb-cb61-44ed-ad40-4f28ae6d5bdc)
   Key in the query as follows and wait for response to be generated :
