@@ -15,7 +15,7 @@ os.environ["GOOGLE_APPLICATION_CREDENTIALS"]=os.path.join(os.getcwd(),".\\access
 
 print(os.getenv('GOOGLE_APPLICATION_CREDENTIALS'))
 print("compelted the credential setup")
-st.header("Chat bot")
+st.header("Expert Advisor")
 os.environ["GOOGLE_APPLICATION_CREDENTIALS"]=os.path.join(os.getcwd(),"access\\gemini_key.json")
 
 customer_data_path =os.path.join(os.getcwd(),".\\customer_dir\\customer_profiles.json")
@@ -197,7 +197,7 @@ def save_chat_history(cust_name):
 def close_session(cust_name):
     save_chat_history(cust_name)
     st.session_state['messages'] = []
-    st.experimental_rerun()
+    st.rerun()
 
 
 
