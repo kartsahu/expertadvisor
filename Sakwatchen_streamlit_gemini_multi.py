@@ -215,7 +215,8 @@ def save_chat_history(cust_name):
 def close_session(cust_name):
     save_chat_history(cust_name)
     st.session_state['messages'] = []
-    #st.experimental_rerun()
+    st.rerun()
+
 
 # ## Find the customer based on the customer name that is provided
 
