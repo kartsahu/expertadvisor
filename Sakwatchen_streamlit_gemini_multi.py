@@ -9,14 +9,23 @@ import logging as log
 import PyPDF2
 import difflib
 
+## Set the Gemini Model Api key
 gemini_api_key = "470155914573"
 os.environ["GOOGLE_APPLICATION_CREDENTIALS"]=os.path.join(os.getcwd(),".\\access\\gemini_key.json")
 
 
 print(os.getenv('GOOGLE_APPLICATION_CREDENTIALS'))
-print("compelted the credential setup")
-st.header("Chat bot")
+print("completed the credential setup")
+
+## Set the Streamlit Chatbot app information
+
+st.header("Expert Advisor")
+st.image("Chatbot_image.png")
+
+## Set the Google App credentials
 os.environ["GOOGLE_APPLICATION_CREDENTIALS"]=os.path.join(os.getcwd(),"access\\gemini_key.json")
+
+## Read the Customer Profiles based on which actions will be taken for existing customers
 
 customer_data_path =os.path.join(os.getcwd(),".\\customer_dir\\customer_profiles.json")
 log.basicConfig(filename=os.path.join(os.getcwd(),"newfile.log"),format='%(asctime)s %(message)s',filemode='w')
@@ -26,6 +35,8 @@ logger = log.getLogger(__name__)
 logger.setLevel(log.INFO)
 
 logger.info("Chatbot started")
+
+## This method was created to read cancellations policy documents in PDF
 
 def reading_single_file(pdf_file_path):
     file_data=[]
@@ -43,6 +54,8 @@ def reading_single_file(pdf_file_path):
             file_data.append(text)
             print(f'Page {page_num + 1}:\n{text}\n')
     return " ".join(file_data)
+
+## This method extracts the hotel, customer and any Json data into text for gemini to be able read as text message
 
 def extract_text_from_json(json_data):
     """
@@ -65,7 +78,7 @@ def extract_text_from_json(json_data):
     return " ".join(texts)
 
 
-
+## This method is essential as it combines all the data from Hotel data, customer data, Loyalty data into one big string for gemini to tokenize
 def read_and_extract_from_multiple_files(json_file_path):
     """
     Reads multiple JSON files and combines their extracted text content.
@@ -97,6 +110,9 @@ def read_and_extract_from_multiple_files(json_file_path):
     logger.info(type(all_text))
     return "\n\n".join(all_text)
 
+
+## This is Main function that is extracting data , generating the prompt and send the response from Gemini model to Streamlit code
+
 def multiturn_generate_content(user_input):
     #Read JSON file
     json_file_path = ".\\data"
@@ -123,7 +139,7 @@ def multiturn_generate_content(user_input):
     generation_config = {
         "max_output_tokens": 8192,
         "temperature": 0.1,
-        "top_p": 0.7,
+        "top_p": 0.6,
     }
 
     safety_settings = [
@@ -173,33 +189,36 @@ def multiturn_generate_content(user_input):
     # Send message to the model
     response = chat.send_message(
         message,  # Pass the message as a string
-        generation_config={
-            "max_output_tokens": 1024,
-            "temperature": 0.1,
-            "top_p": 0.6,
-        },
+        generation_config=generation_config,
         safety_settings=[],
     )
     logger.info("\nChatbot Response:")
     print(response.text)
     print("-" * 50)
     return response
-# Example usage
+
+# ## This is for loading the chat session history so that we can provide contextual responses
 def load_chat_history(cust_name):
     try:
         with open(f'{cust_name}_chat_history.json', 'r') as file:
             return json.load(file)
     except FileNotFoundError:
         return []
+# ## This is for loading the chat session history so that we can provide contextual responses
+
 def save_chat_history(cust_name):
     with open(f'{cust_name}_chat_history.json', 'w') as file:
         json.dump(st.session_state['messages'], file)
+
+# ## This is for closing chat session history so tha agent can use it for next customer
+
 def close_session(cust_name):
     save_chat_history(cust_name)
     st.session_state['messages'] = []
     st.rerun()
 
 
+# ## Find the customer based on the customer name that is provided
 
 def find_customer_by_name(file_path, customer_name):
     try:
@@ -267,7 +286,7 @@ if __name__ == '__main__':
         #     # gemini_response = query_gemini_api(full_query, gemini_api_key)
             if cls_cust_name:
                 ## when user details are available in db
-                prompt=(f"""\n\nGenerate response for the query based on abobe data\n\n
+                prompt=(f"""\n\nGenerate response for the query based on above data\n\n
                 User details and preferences : {json.dumps(cls_cust_name)} 
                 to create a response for query {user_query} """)
             else:

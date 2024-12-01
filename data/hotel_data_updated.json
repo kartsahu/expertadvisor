@@ -20,13 +20,15 @@
                 "VEGAN RESTRAUNTS",
                 "CHILD CARE",
                 "BABY FOOD",
-                "SUITES"
+                "SUITES",
+                "Salt-water pool"
             ]
         },
         "Cancellation_policy": [
             "Free cancellation till 24hrs before check-in"
         ],
-        "pet frendly": "not pet friendly"
+        "pet friendly": {
+            "pet_friendly": false }
     },
     {
         "Hotel ID": "HOTEL_001",
@@ -48,7 +50,8 @@
         "Cancellation_policy": [
             "Free cancellation till 24hrs before check-in"
         ],
-        "pet frendly": "not pet friendly"
+        "pet friendly": {
+            "pet_friendly": false }
     },
     {
         "Hotel ID": "HOTEL_002",
@@ -72,7 +75,7 @@
         "Cancellation_policy": [
             "Free cancellation till 72hrs before check in"
         ],
-        "pet frendly": {
+        "pet friendly": {
             "pet_friendly": true,
             "pet_fee": 50,
             "pet_weight limit in pounds": 40
@@ -98,7 +101,8 @@
         "Cancellation_policy": [
             "Cancel Anytime"
         ],
-        "pet frendly": "not pet friendly"
+        "pet friendly": {
+            "pet_friendly": false }
     },
     {
         "Hotel ID": "HOTEL_004",
@@ -127,7 +131,8 @@
         "Cancellation_policy": [
             "Free cancellation till 24hrs before check-in"
         ],
-        "pet frendly": "not pet friendly"
+        "pet friendly": {
+            "pet_friendly": false }
     },
     {
         "Hotel ID": "HOTEL_005",
@@ -156,7 +161,7 @@
         "Cancellation_policy": [
             "Free cancellation till 48hrs before check-in"
         ],
-        "pet frendly": {
+        "pet friendly": {
             "pet_friendly": true,
             "pet_fee": 100,
             "pet_weight limit in pounds": 50
@@ -189,7 +194,8 @@
         "Cancellation_policy": [
             "Free cancellation till 24hrs before check-in"
         ],
-        "pet frendly": "not pet friendly"
+        "pet friendly": {
+            "pet_friendly": false }
     },
     {
         "Hotel ID": "HOTEL_007",
@@ -218,7 +224,8 @@
         "Cancellation_policy": [
             "Free cancellation till 48hrs before check-in"
         ],
-        "pet frendly": "not pet friendly"
+        "pet friendly": {
+            "pet_friendly": false }
     },
     {
         "Hotel ID": "HOTEL_008",
@@ -240,7 +247,8 @@
         "Cancellation_policy": [
             "Free cancellation till 24hrs before check-in"
         ],
-        "pet frendly": "not pet friendly"
+        "pet friendly": {
+            "pet_friendly": false }
     },
     {
         "Hotel ID": "HOTEL_009",
@@ -264,7 +272,8 @@
         "Cancellation_policy": [
             "Free cancellation till 72hrs before check in"
         ],
-        "pet frendly": "not pet friendly"
+        "pet friendly": {
+            "pet_friendly": false }
     },
     {
         "Hotel ID": "HOTEL_010",
@@ -288,7 +297,8 @@
         "Cancellation_policy": [
             "Free cancellation till 24hrs before check-in"
         ],
-        "pet frendly": "not pet friendly"
+        "pet friendly": {
+            "pet_friendly": false }
     },
     {
         "Hotel ID": "HOTEL_011",
@@ -312,7 +322,8 @@
         "Cancellation_policy": [
             "Free cancellation till 48hrs before check-in"
         ],
-        "pet frendly": "not pet friendly"
+        "pet friendly": {
+            "pet_friendly": false }
     },
     {
         "Hotel ID": "HOTEL_012",
@@ -334,7 +345,7 @@
         "Cancellation_policy": [
             "Free cancellation till 24hrs before check-in"
         ],
-        "pet frendly": {
+        "pet friendly": {
             "pet_friendly": true,
             "pet_fee": 100,
             "pet_weight limit in pounds": 40
@@ -367,7 +378,8 @@
         "Cancellation_policy": [
             "Cancel Anytime"
         ],
-        "pet frendly": "not pet friendly"
+        "pet friendly": {
+            "pet_friendly": false }
     },
     {
         "Hotel ID": "HOTEL_014",
@@ -389,7 +401,7 @@
         "Cancellation_policy": [
             "Free cancellation till 24hrs before check-in"
         ],
-        "pet frendly": {
+        "pet friendly": {
             "pet_friendly": true,
             "pet_fee": 100,
             "pet_weight limit in pounds": 40
@@ -417,7 +429,7 @@
         "Cancellation_policy": [
             "Free cancellation till 48hrs before check-in"
         ],
-        "pet frendly": {
+        "pet friendly": {
             "pet_friendly": true,
             "pet_fee": 150,
             "pet_weight limit in pounds": 40
@@ -445,7 +457,8 @@
         "Cancellation_policy": [
             "Cancel Anytime"
         ],
-        "pet frendly": "not pet friendly"
+        "pet friendly": {
+            "pet_friendly": false }
     },
     {
         "Hotel ID": "HOTEL_017",
@@ -474,7 +487,8 @@
         "Cancellation_policy": [
             "Free cancellation till 24hrs before check-in"
         ],
-        "pet frendly": "not pet friendly"
+        "pet friendly": {
+            "pet_friendly": false }
     },
     {
         "Hotel ID": "HOTEL_018",
@@ -503,7 +517,8 @@
         "Cancellation_policy": [
             "Free cancellation till 24hrs before check-in"
         ],
-        "pet frendly": "not pet friendly"
+        "pet friendly": {
+            "pet_friendly": false }
     },
     {
         "Hotel ID": "HOTEL_019",
@@ -532,7 +547,8 @@
         "Cancellation_policy": [
             "Free cancellation till 24hrs before check-in"
         ],
-        "pet frendly": "not pet friendly"
+        "pet friendly": {
+            "pet_friendly": false }
     },
     {
         "Hotel ID": "HOTEL_020",
@@ -556,7 +572,7 @@
         "Cancellation_policy": [
             "Free cancellation till 72hrs before check in"
         ],
-        "pet frendly": {
+        "pet friendly": {
             "pet_friendly": true,
             "pet_fee": 50,
             "pet_weight limit in pounds": 40
@@ -584,7 +600,8 @@
         "Cancellation_policy": [
             "Free cancellation till 24hrs before check-in"
         ],
-        "pet frendly": "not pet friendly"
+        "pet friendly": {
+            "pet_friendly": false }
     },
     {
         "Hotel ID": "HOTEL_022",
@@ -613,7 +630,8 @@
         "Cancellation_policy": [
             "Free cancellation till 24hrs before check-in"
         ],
-        "pet frendly": "not pet friendly"
+        "pet friendly": {
+            "pet_friendly": false }
     },
     {
         "Hotel ID": "HOTEL_023",
@@ -642,7 +660,8 @@
         "Cancellation_policy": [
             "Free cancellation till 24hrs before check-in"
         ],
-        "pet frendly": "not pet friendly"
+        "pet friendly": {
+            "pet_friendly": false }
     },
     {
         "Hotel ID": "HOTEL_024",
@@ -671,7 +690,8 @@
         "Cancellation_policy": [
             "Free cancellation till 72hrs before check in"
         ],
-        "pet frendly": "not pet friendly"
+        "pet friendly": {
+            "pet_friendly": false }
     },
     {
         "Hotel ID": "HOTEL_025",
@@ -700,7 +720,8 @@
         "Cancellation_policy": [
             "Free cancellation till 72hrs before check in"
         ],
-        "pet frendly": "not pet friendly"
+        "pet friendly": {
+            "pet_friendly": false }
     },
     {
         "Hotel ID": "HOTEL_026",
@@ -722,7 +743,8 @@
         "Cancellation_policy": [
             "Free cancellation till 48hrs before check-in"
         ],
-        "pet frendly": "not pet friendly"
+        "pet friendly": {
+            "pet_friendly": false }
     },
     {
         "Hotel ID": "HOTEL_027",
@@ -746,7 +768,7 @@
         "Cancellation_policy": [
             "Free cancellation till 72hrs before check in"
         ],
-        "pet frendly": {
+        "pet friendly": {
             "pet_friendly": true,
             "pet_fee": 50,
             "pet_weight limit in pounds": 40
@@ -772,7 +794,8 @@
         "Cancellation_policy": [
             "Free cancellation till 72hrs before check in"
         ],
-        "pet frendly": "not pet friendly"
+        "pet friendly": {
+            "pet_friendly": false }
     },
     {
         "Hotel ID": "HOTEL_029",
@@ -801,7 +824,8 @@
         "Cancellation_policy": [
             "Free cancellation till 72hrs before check in"
         ],
-        "pet frendly": "not pet friendly"
+        "pet friendly": {
+            "pet_friendly": false }
     },
     {
         "Hotel ID": "HOTEL_030",
@@ -830,7 +854,8 @@
         "Cancellation_policy": [
             "Free cancellation till 24hrs before check-in"
         ],
-        "pet frendly": "not pet friendly"
+        "pet friendly": {
+            "pet_friendly": false }
     },
     {
         "Hotel ID": "HOTEL_031",
@@ -852,7 +877,7 @@
         "Cancellation_policy": [
             "Free cancellation till 48hrs before check-in"
         ],
-        "pet frendly": {
+        "pet friendly": {
             "pet_friendly": true,
             "pet_fee": 100,
             "pet_weight limit in pounds": 40
@@ -885,7 +910,8 @@
         "Cancellation_policy": [
             "Free cancellation till 48hrs before check-in"
         ],
-        "pet frendly": "not pet friendly"
+        "pet friendly": {
+            "pet_friendly": false }
     },
     {
         "Hotel ID": "HOTEL_033",
@@ -909,7 +935,8 @@
         "Cancellation_policy": [
             "Free cancellation till 24hrs before check-in"
         ],
-        "pet frendly": "not pet friendly"
+        "pet friendly": {
+            "pet_friendly": false }
     },
     {
         "Hotel ID": "HOTEL_034",
@@ -931,7 +958,8 @@
         "Cancellation_policy": [
             "Free cancellation till 72hrs before check in"
         ],
-        "pet frendly": "not pet friendly"
+        "pet friendly": {
+            "pet_friendly": false }
     },
     {
         "Hotel ID": "HOTEL_035",
@@ -955,7 +983,7 @@
         "Cancellation_policy": [
             "Free cancellation till 24hrs before check-in"
         ],
-        "pet frendly": {
+        "pet friendly": {
             "pet_friendly": true,
             "pet_fee": 100,
             "pet_weight limit in pounds": 50
@@ -983,7 +1011,8 @@
         "Cancellation_policy": [
             "Free cancellation till 48hrs before check-in"
         ],
-        "pet frendly": "not pet friendly"
+        "pet friendly": {
+            "pet_friendly": false }
     },
     {
         "Hotel ID": "HOTEL_037",
@@ -1005,7 +1034,7 @@
         "Cancellation_policy": [
             "Free cancellation till 72hrs before check in"
         ],
-        "pet frendly": {
+        "pet friendly": {
             "pet_friendly": true,
             "pet_fee": 100,
             "pet_weight limit in pounds": 40
@@ -1031,7 +1060,8 @@
         "Cancellation_policy": [
             "Cancel Anytime"
         ],
-        "pet frendly": "not pet friendly"
+        "pet friendly": {
+            "pet_friendly": false }
     },
     {
         "Hotel ID": "HOTEL_039",
@@ -1060,7 +1090,8 @@
         "Cancellation_policy": [
             "Free cancellation till 72hrs before check in"
         ],
-        "pet frendly": "not pet friendly"
+        "pet friendly": {
+            "pet_friendly": false }
     },
     {
         "Hotel ID": "HOTEL_040",
@@ -1084,7 +1115,7 @@
         "Cancellation_policy": [
             "Cancel Anytime"
         ],
-        "pet frendly": {
+        "pet friendly": {
             "pet_friendly": true,
             "pet_fee": 150,
             "pet_weight limit in pounds": 40
@@ -1110,7 +1141,8 @@
         "Cancellation_policy": [
             "Free cancellation till 24hrs before check-in"
         ],
-        "pet frendly": "not pet friendly"
+        "pet friendly": {
+            "pet_friendly": false }
     },
     {
         "Hotel ID": "HOTEL_042",
@@ -1139,7 +1171,8 @@
         "Cancellation_policy": [
             "Free cancellation till 72hrs before check in"
         ],
-        "pet frendly": "not pet friendly"
+        "pet friendly": {
+            "pet_friendly": false }
     },
     {
         "Hotel ID": "HOTEL_043",
@@ -1163,7 +1196,8 @@
         "Cancellation_policy": [
             "Free cancellation till 48hrs before check-in"
         ],
-        "pet frendly": "not pet friendly"
+        "pet friendly": {
+            "pet_friendly": false }
     },
     {
         "Hotel ID": "HOTEL_044",
@@ -1185,7 +1219,7 @@
         "Cancellation_policy": [
             "Free cancellation till 24hrs before check-in"
         ],
-        "pet frendly": {
+        "pet friendly": {
             "pet_friendly": true,
             "pet_fee": 100,
             "pet_weight limit in pounds": 40
@@ -1213,7 +1247,7 @@
         "Cancellation_policy": [
             "Free cancellation till 72hrs before check in"
         ],
-        "pet frendly": {
+        "pet friendly": {
             "pet_friendly": true,
             "pet_fee": 50,
             "pet_weight limit in pounds": 40
@@ -1241,7 +1275,7 @@
         "Cancellation_policy": [
             "Free cancellation till 72hrs before check in"
         ],
-        "pet frendly": {
+        "pet friendly": {
             "pet_friendly": true,
             "pet_fee": 150,
             "pet_weight limit in pounds": 40
@@ -1268,13 +1302,15 @@
                 "VEGAN RESTRAUNTS",
                 "CHILD CARE",
                 "BABY FOOD",
-                "SUITES"
+                "SUITES",
+                "Salt-water pool"
             ]
         },
         "Cancellation_policy": [
             "Free cancellation till 72hrs before check in"
         ],
-        "pet frendly": "not pet friendly"
+        "pet friendly": {
+            "pet_friendly": false }
     },
     {
         "Hotel ID": "HOTEL_048",
@@ -1303,7 +1339,8 @@
         "Cancellation_policy": [
             "Free cancellation till 24hrs before check-in"
         ],
-        "pet frendly": "not pet friendly"
+        "pet friendly": {
+            "pet_friendly": false }
     },
     {
         "Hotel ID": "HOTEL_049",
@@ -1332,7 +1369,8 @@
         "Cancellation_policy": [
             "Cancel Anytime"
         ],
-        "pet frendly": "not pet friendly"
+        "pet friendly": {
+            "pet_friendly": false }
     },
     {
         "Hotel ID": "HOTEL_050",
@@ -1356,7 +1394,8 @@
         "Cancellation_policy": [
             "Free cancellation till 24hrs before check-in"
         ],
-        "pet frendly": "not pet friendly"
+        "pet friendly": {
+            "pet_friendly": false }
     },
     {
         "Hotel ID": "HOTEL_051",
@@ -1385,7 +1424,8 @@
         "Cancellation_policy": [
             "Free cancellation till 48hrs before check-in"
         ],
-        "pet frendly": "not pet friendly"
+        "pet friendly": {
+            "pet_friendly": false }
     },
     {
         "Hotel ID": "HOTEL_052",
@@ -1409,7 +1449,8 @@
         "Cancellation_policy": [
             "Cancel Anytime"
         ],
-        "pet frendly": "not pet friendly"
+        "pet friendly": {
+            "pet_friendly": false }
     },
     {
         "Hotel ID": "HOTEL_053",
@@ -1433,7 +1474,8 @@
         "Cancellation_policy": [
             "Cancel Anytime"
         ],
-        "pet frendly": "not pet friendly"
+        "pet friendly": {
+            "pet_friendly": false }
     },
     {
         "Hotel ID": "HOTEL_054",
@@ -1462,7 +1504,8 @@
         "Cancellation_policy": [
             "Free cancellation till 24hrs before check-in"
         ],
-        "pet frendly": "not pet friendly"
+        "pet friendly": {
+            "pet_friendly": false }
     },
     {
         "Hotel ID": "HOTEL_055",
@@ -1486,7 +1529,8 @@
         "Cancellation_policy": [
             "Free cancellation till 72hrs before check in"
         ],
-        "pet frendly": "not pet friendly"
+        "pet friendly": {
+            "pet_friendly": false }
     },
     {
         "Hotel ID": "HOTEL_056",
@@ -1515,7 +1559,8 @@
         "Cancellation_policy": [
             "Free cancellation till 24hrs before check-in"
         ],
-        "pet frendly": "not pet friendly"
+        "pet friendly": {
+            "pet_friendly": false }
     },
     {
         "Hotel ID": "HOTEL_057",
@@ -1544,7 +1589,8 @@
         "Cancellation_policy": [
             "Free cancellation till 72hrs before check in"
         ],
-        "pet frendly": "not pet friendly"
+        "pet friendly": {
+            "pet_friendly": false }
     },
     {
         "Hotel ID": "HOTEL_058",
@@ -1568,7 +1614,7 @@
         "Cancellation_policy": [
             "Free cancellation till 48hrs before check-in"
         ],
-        "pet frendly": {
+        "pet friendly": {
             "pet_friendly": true,
             "pet_fee": 50,
             "pet_weight limit in pounds": 40
@@ -1596,7 +1642,8 @@
         "Cancellation_policy": [
             "Free cancellation till 24hrs before check-in"
         ],
-        "pet frendly": "not pet friendly"
+        "pet friendly": {
+            "pet_friendly": false }
     },
     {
         "Hotel ID": "HOTEL_060",
@@ -1620,7 +1667,8 @@
         "Cancellation_policy": [
             "Free cancellation till 72hrs before check in"
         ],
-        "pet frendly": "not pet friendly"
+        "pet friendly": {
+            "pet_friendly": false }
     },
     {
         "Hotel ID": "HOTEL_061",
@@ -1644,7 +1692,8 @@
         "Cancellation_policy": [
             "Cancel Anytime"
         ],
-        "pet frendly": "not pet friendly"
+        "pet friendly": {
+            "pet_friendly": false }
     },
     {
         "Hotel ID": "HOTEL_062",
@@ -1668,7 +1717,7 @@
         "Cancellation_policy": [
             "Free cancellation till 24hrs before check-in"
         ],
-        "pet frendly": {
+        "pet friendly": {
             "pet_friendly": true,
             "pet_fee": 150,
             "pet_weight limit in pounds": 40
@@ -1701,7 +1750,8 @@
         "Cancellation_policy": [
             "Free cancellation till 48hrs before check-in"
         ],
-        "pet frendly": "not pet friendly"
+        "pet friendly": {
+            "pet_friendly": false }
     },
     {
         "Hotel ID": "HOTEL_064",
@@ -1725,7 +1775,8 @@
         "Cancellation_policy": [
             "Cancel Anytime"
         ],
-        "pet frendly": "not pet friendly"
+        "pet friendly": {
+            "pet_friendly": false }
     },
     {
         "Hotel ID": "HOTEL_065",
@@ -1749,7 +1800,8 @@
         "Cancellation_policy": [
             "Free cancellation till 24hrs before check-in"
         ],
-        "pet frendly": "not pet friendly"
+        "pet friendly": {
+            "pet_friendly": false }
     },
     {
         "Hotel ID": "HOTEL_066",
@@ -1778,7 +1830,8 @@
         "Cancellation_policy": [
             "Free cancellation till 72hrs before check in"
         ],
-        "pet frendly": "not pet friendly"
+        "pet friendly": {
+            "pet_friendly": false }
     },
     {
         "Hotel ID": "HOTEL_067",
@@ -1800,7 +1853,7 @@
         "Cancellation_policy": [
             "Free cancellation till 24hrs before check-in"
         ],
-        "pet frendly": {
+        "pet friendly": {
             "pet_friendly": true,
             "pet_fee": 100,
             "pet_weight limit in pounds": 40
@@ -1833,7 +1886,8 @@
         "Cancellation_policy": [
             "Free cancellation till 72hrs before check in"
         ],
-        "pet frendly": "not pet friendly"
+        "pet friendly": {
+            "pet_friendly": false }
     },
     {
         "Hotel ID": "HOTEL_069",
@@ -1857,7 +1911,8 @@
         "Cancellation_policy": [
             "Free cancellation till 24hrs before check-in"
         ],
-        "pet frendly": "not pet friendly"
+        "pet friendly": {
+            "pet_friendly": false }
     },
     {
         "Hotel ID": "HOTEL_070",
@@ -1886,7 +1941,7 @@
         "Cancellation_policy": [
             "Free cancellation till 24hrs before check-in"
         ],
-        "pet frendly": {
+        "pet friendly": {
             "pet_friendly": true,
             "pet_fee": 150,
             "pet_weight limit in pounds": 30
@@ -1914,7 +1969,8 @@
         "Cancellation_policy": [
             "Free cancellation till 72hrs before check in"
         ],
-        "pet frendly": "not pet friendly"
+        "pet friendly": {
+            "pet_friendly": false }
     },
     {
         "Hotel ID": "HOTEL_072",
@@ -1943,7 +1999,8 @@
         "Cancellation_policy": [
             "Cancel Anytime"
         ],
-        "pet frendly": "not pet friendly"
+        "pet friendly": {
+            "pet_friendly": false }
     },
     {
         "Hotel ID": "HOTEL_073",
@@ -1972,7 +2029,8 @@
         "Cancellation_policy": [
             "Free cancellation till 24hrs before check-in"
         ],
-        "pet frendly": "not pet friendly"
+        "pet friendly": {
+            "pet_friendly": false }
     },
     {
         "Hotel ID": "HOTEL_074",
@@ -1994,7 +2052,8 @@
         "Cancellation_policy": [
             "Free cancellation till 48hrs before check-in"
         ],
-        "pet frendly": "not pet friendly"
+        "pet friendly": {
+            "pet_friendly": false }
     },
     {
         "Hotel ID": "HOTEL_075",
@@ -2023,7 +2082,8 @@
         "Cancellation_policy": [
             "Cancel Anytime"
         ],
-        "pet frendly": "not pet friendly"
+        "pet friendly": {
+            "pet_friendly": false }
     },
     {
         "Hotel ID": "HOTEL_076",
@@ -2047,7 +2107,8 @@
         "Cancellation_policy": [
             "Free cancellation till 24hrs before check-in"
         ],
-        "pet frendly": "not pet friendly"
+        "pet friendly": {
+            "pet_friendly": false }
     },
     {
         "Hotel ID": "HOTEL_077",
@@ -2076,10 +2137,10 @@
         "Cancellation_policy": [
             "Cancel Anytime"
         ],
-        "pet frendly": {
+        "pet_friendly": {
             "pet_friendly": true,
             "pet_fee": 150,
-            "pet_weight limit in pounds": 40
+            "pet_weight limit in pounds": 100
         }
     },
     {
@@ -2109,7 +2170,8 @@
         "Cancellation_policy": [
             "Free cancellation till 72hrs before check in"
         ],
-        "pet frendly": "not pet friendly"
+        "pet friendly": {
+            "pet_friendly": false }
     },
     {
         "Hotel ID": "HOTEL_079",
@@ -2131,7 +2193,8 @@
         "Cancellation_policy": [
             "Free cancellation till 72hrs before check in"
         ],
-        "pet frendly": "not pet friendly"
+        "pet friendly": {
+            "pet_friendly": false }
     },
     {
         "Hotel ID": "HOTEL_080",
@@ -2155,7 +2218,8 @@
         "Cancellation_policy": [
             "Free cancellation till 72hrs before check in"
         ],
-        "pet frendly": "not pet friendly"
+        "pet friendly": {
+            "pet_friendly": false }
     },
     {
         "Hotel ID": "HOTEL_081",
@@ -2177,7 +2241,8 @@
         "Cancellation_policy": [
             "Free cancellation till 48hrs before check-in"
         ],
-        "pet frendly": "not pet friendly"
+        "pet friendly": {
+            "pet_friendly": false }
     },
     {
         "Hotel ID": "HOTEL_082",
@@ -2206,7 +2271,11 @@
         "Cancellation_policy": [
             "Free cancellation till 24hrs before check-in"
         ],
-        "pet frendly": "not pet friendly"
+        "pet_friendly":{
+            "pet_friendly": true,
+            "pet_fee": 150,
+            "pet_weight limit in pounds": 100
+        }
     },
     {
         "Hotel ID": "HOTEL_083",
@@ -2235,7 +2304,8 @@
         "Cancellation_policy": [
             "Cancel Anytime"
         ],
-        "pet frendly": "not pet friendly"
+        "pet friendly": {
+            "pet_friendly": false }
     },
     {
         "Hotel ID": "HOTEL_084",
@@ -2259,7 +2329,7 @@
         "Cancellation_policy": [
             "Free cancellation till 48hrs before check-in"
         ],
-        "pet frendly": {
+        "pet friendly": {
             "pet_friendly": true,
             "pet_fee": 100,
             "pet_weight limit in pounds": 50
@@ -2285,7 +2355,8 @@
         "Cancellation_policy": [
             "Cancel Anytime"
         ],
-        "pet frendly": "not pet friendly"
+        "pet friendly": {
+            "pet_friendly": false }
     },
     {
         "Hotel ID": "HOTEL_086",
@@ -2309,7 +2380,8 @@
         "Cancellation_policy": [
             "Free cancellation till 72hrs before check in"
         ],
-        "pet frendly": "not pet friendly"
+        "pet friendly": {
+            "pet_friendly": false }
     },
     {
         "Hotel ID": "HOTEL_087",
@@ -2333,7 +2405,8 @@
         "Cancellation_policy": [
             "Free cancellation till 48hrs before check-in"
         ],
-        "pet frendly": "not pet friendly"
+        "pet friendly": {
+            "pet_friendly": false }
     },
     {
         "Hotel ID": "HOTEL_088",
@@ -2355,7 +2428,7 @@
         "Cancellation_policy": [
             "Free cancellation till 72hrs before check in"
         ],
-        "pet frendly": {
+        "pet_friendly": {
             "pet_friendly": true,
             "pet_fee": 100,
             "pet_weight limit in pounds": 40
@@ -2383,7 +2456,8 @@
         "Cancellation_policy": [
             "Free cancellation till 72hrs before check in"
         ],
-        "pet frendly": "not pet friendly"
+        "pet friendly": {
+            "pet_friendly": false }
     },
     {
         "Hotel ID": "HOTEL_090",
@@ -2407,7 +2481,8 @@
         "Cancellation_policy": [
             "Free cancellation till 48hrs before check-in"
         ],
-        "pet frendly": "not pet friendly"
+        "pet friendly": {
+            "pet_friendly": false }
     },
     {
         "Hotel ID": "HOTEL_091",
@@ -2431,7 +2506,8 @@
         "Cancellation_policy": [
             "Free cancellation till 72hrs before check in"
         ],
-        "pet frendly": "not pet friendly"
+        "pet friendly": {
+            "pet_friendly": false }
     },
     {
         "Hotel ID": "HOTEL_092",
@@ -2454,13 +2530,15 @@
                 "RESTRAUNTS",
                 "VEGAN RESTRAUNTS",
                 "CHILD CARE",
-                "BABY FOOD"
+                "BABY FOOD",
+                "Salt-water pool"
             ]
         },
         "Cancellation_policy": [
             "Free cancellation till 48hrs before check-in"
         ],
-        "pet frendly": "not pet friendly"
+        "pet friendly": {
+            "pet_friendly": false }
     },
     {
         "Hotel ID": "HOTEL_093",
@@ -2489,7 +2567,8 @@
         "Cancellation_policy": [
             "Cancel Anytime"
         ],
-        "pet frendly": "not pet friendly"
+        "pet friendly": {
+            "pet_friendly": false }
     },
     {
         "Hotel ID": "HOTEL_094",
@@ -2513,7 +2592,7 @@
         "Cancellation_policy": [
             "Cancel Anytime"
         ],
-        "pet frendly": {
+        "pet friendly": {
             "pet_friendly": true,
             "pet_fee": 50,
             "pet_weight limit in pounds": 40
@@ -2535,13 +2614,15 @@
                 "TV",
                 "AC",
                 "Picaso Paintings",
-                "Laundry"
+                "Laundry",
+                "Salt-water pool"
             ]
         },
         "Cancellation_policy": [
             "Cancel Anytime"
         ],
-        "pet frendly": "not pet friendly"
+        "pet friendly": {
+            "pet_friendly": false }
     },
     {
         "Hotel ID": "HOTEL_096",
@@ -2565,7 +2646,8 @@
         "Cancellation_policy": [
             "Free cancellation till 72hrs before check in"
         ],
-        "pet frendly": "not pet friendly"
+        "pet friendly": {
+            "pet_friendly": false }
     },
     {
         "Hotel ID": "HOTEL_097",
@@ -2587,7 +2669,7 @@
         "Cancellation_policy": [
             "Cancel Anytime"
         ],
-        "pet frendly": {
+        "pet friendly": {
             "pet_friendly": true,
             "pet_fee": 20,
             "pet_weight limit in pounds": 40
@@ -2615,7 +2697,8 @@
         "Cancellation_policy": [
             "Free cancellation till 72hrs before check in"
         ],
-        "pet frendly": "not pet friendly"
+        "pet friendly": {
+            "pet_friendly": false }
     },
     {
         "Hotel ID": "HOTEL_099",
@@ -2644,6 +2727,7 @@
         "Cancellation_policy": [
             "Cancel Anytime"
         ],
-        "pet frendly": "not pet friendly"
+        "pet friendly": {
+            "pet_friendly": false }
     }
 ]
