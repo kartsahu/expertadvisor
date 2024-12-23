@@ -55,13 +55,20 @@ logger.info("Chatbot started")
 
 def extract_hotel_details_location(city_name):
     hotels_in_city = [hotel for hotel in hotel_json_data if hotel['City'].lower() == city_name.lower()]
+    # print(hotels_in_city,'hotel_detail_func')
     return hotels_in_city
 
 def extract_hotel_details_pet(pet_friendly):
-    for i in hotel_json_data:
-        print(i)
-        break
+    # for i in hotel_json_data:
+    #     print(i)
+    #     break
     hotels_based_pet_preference = [hotel for hotel in hotel_json_data if hotel.get('pet friendly', {}).get('pet_friendly') == pet_friendly]
+    return hotels_based_pet_preference
+
+def get_hotels_detail_based_on_location_with_pet_preference(city_name,pet_friendly):
+    hotels_in_city = [hotel for hotel in hotel_json_data if hotel['City'].lower() == city_name.lower()]
+    hotels_based_pet_preference = [hotel for hotel in hotels_in_city if
+                                   hotel.get('pet friendly', {}).get('pet_friendly') == pet_friendly]
     return hotels_based_pet_preference
 
 get_hotels_detail_based_on_location_func=FunctionDeclaration(
@@ -78,15 +85,33 @@ get_hotels_detail_based_on_location_func=FunctionDeclaration(
     }
 )
 
-get_hotel_details_based_on_pet_preference_func=FunctionDeclaration(
-    name='get_hotel_details_based_on_pet_preference',
-    description='get all the hotel details based on pet preference i.e., either True or false',
+# get_hotel_details_based_on_pet_preference_func=FunctionDeclaration(
+#     name='get_hotel_details_based_on_pet_preference',
+#     description='get all the hotel details based on pet preference i.e., either True or false',
+#     parameters={
+#         'type':'object',
+#         'properties':{
+#             'pet_friendly':{
+#                 'type':'boolean',
+#                 'description':'based on user preference find out if user what to get hotel details for pet preference as boolen value'
+#             }
+#         }
+#     }
+# )
+
+get_hotels_detail_based_on_location_with_pet_preference_func=FunctionDeclaration(
+    name='get_hotels_detail_based_on_location_with_pet_preference',
+    description='get all the hotel details based on city location and pet preferences',
     parameters={
         'type':'object',
         'properties':{
+            'location':{
+                'type':'string',
+                'description':'extract hotel details based on location that is city'
+            },
             'pet_friendly':{
                 'type':'boolean',
-                'description':' get pet_friendly as boolen value'
+                'description':'based on user preference find out if user what to get hotel details for pet preference as boolen value'
             }
         }
     }
@@ -94,18 +119,43 @@ get_hotel_details_based_on_pet_preference_func=FunctionDeclaration(
 
 
 
-
-
 hotel_detail_tool = Tool(
     function_declarations=[get_hotels_detail_based_on_location_func,
-                           get_hotel_details_based_on_pet_preference_func]
+                           # get_hotel_details_based_on_pet_preference_func,
+                           get_hotels_detail_based_on_location_with_pet_preference_func]
 )
 
 vertexai.init(project="sakwatchen-expertadvisor", location="us-central1")
 
+generation_config = {
+    "max_output_tokens": 8192,
+    "temperature": 0.4,
+    "top_p": 0.9,
+}
+
+safety_settings = [
+    SafetySetting(
+        category=SafetySetting.HarmCategory.HARM_CATEGORY_HATE_SPEECH,
+        threshold=SafetySetting.HarmBlockThreshold.OFF
+    ),
+    SafetySetting(
+        category=SafetySetting.HarmCategory.HARM_CATEGORY_DANGEROUS_CONTENT,
+        threshold=SafetySetting.HarmBlockThreshold.OFF
+    ),
+    SafetySetting(
+        category=SafetySetting.HarmCategory.HARM_CATEGORY_SEXUALLY_EXPLICIT,
+        threshold=SafetySetting.HarmBlockThreshold.OFF
+    ),
+    SafetySetting(
+        category=SafetySetting.HarmCategory.HARM_CATEGORY_HARASSMENT,
+        threshold=SafetySetting.HarmBlockThreshold.OFF
+    ),
+]
+
 model = GenerativeModel(
     "gemini-1.5-pro-002",
     tools=[hotel_detail_tool],
+    generation_config=generation_config,
 )
 
 
@@ -201,14 +251,19 @@ if __name__ == '__main__':
                 ## when user details are available in db
                 prompt=(f"""\n\nGenerate response for the query based on above data\n\n
                 User details and preferences : {json.dumps(cls_cust_name)} 
-                to create a response for query {user_query} """)
+                to create a response for query i.e., {user_query} based on user preference.""")
             else:
                 ## When user details are not available
                 prompt=(f"""\n\nGenerate response for the query based on above data\n\n
                 Query: {user_query}
                 for customer names : {cust_name} 
                 consider the special preference as follows \n{use_details_fromUI} """ )
+
+            print("start prompt " +str(prompt)+'end prompt')
+
             response = chat.send_message(prompt)
+            function_calls = response.candidates[0].function_calls
+            print("Suggested finction calls:\n", function_calls)
             response = response.candidates[0].content.parts[0]
             print(response)
             api_requests_and_responses = []
@@ -222,18 +277,24 @@ if __name__ == '__main__':
                         params[key]=value
                     print('function calling right now')
                     print(response.function_call.name)
-                    print(params)
+                    print('parametes'+str(params))
 
                     if response.function_call.name=='get_hotels_detail_based_on_location':
                         api_response=extract_hotel_details_location(params['location'])
                         api_requests_and_responses.append(
                             [response.function_call.name,params,api_response]
                         )
-                    if response.function_call.name=='get_hotel_details_based_on_pet_preference':
-                        api_response = extract_hotel_details_pet(params['pet_friendly'])
+                    # if response.function_call.name=='get_hotel_details_based_on_pet_preference':
+                    #     api_response = extract_hotel_details_pet(params['pet_friendly'])
+                    #     api_requests_and_responses.append(
+                    #         [response.function_call.name, params, api_response]
+                    #                                     )
+                    if response.function_call.name=='get_hotels_detail_based_on_location_with_pet_preference':
+                        api_response = get_hotels_detail_based_on_location_with_pet_preference(params['location'],params['pet_friendly'])
                         api_requests_and_responses.append(
                             [response.function_call.name, params, api_response]
-                                                        )
+                        )
+
                     print(api_response)
                     response = chat.send_message(
                         Part.from_function_response(
@@ -268,7 +329,6 @@ if __name__ == '__main__':
                     # api_requests_and_responses.append(
                     #     [response.function_call.name, params, api_response]
                     # )
-
 
 
 
